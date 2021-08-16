@@ -16,9 +16,9 @@ public class HienThiHinhAnh {
             choice = Integer.parseInt(scanner.nextLine());
             switch (choice) {
                 case 1:
-                    System.out.print("Hãy nhập chiều dài của hình chữ nhật: ");
+                    System.out.print("Nhập chiều dài: ");
                     int width = Integer.parseInt(scanner.nextLine());
-                    System.out.print("Hãy nhập chiều rộng của hình chữ nhật: ");
+                    System.out.print("Nhập chiều rộng: ");
                     int height = Integer.parseInt(scanner.nextLine());
                     for (int i = 0; i < height; i++) {
                         for (int j = 0; j < width; j++) {
@@ -28,7 +28,7 @@ public class HienThiHinhAnh {
                     }
                     break;
                 case 2:
-                    System.out.print("Hãy nhập cạnh a của hình tam giác vuông cân: ");
+                    System.out.print("nhập cạnh của tam giác: ");
                     int a = Integer.parseInt(scanner.nextLine());
                     System.out.println("Bạn muốn hình tam giác vuông cân có đỉnh ở đâu: " +
                             "1. Ở trên bên trái " +
@@ -38,17 +38,17 @@ public class HienThiHinhAnh {
                     int choice1 = Integer.parseInt(scanner.nextLine());
                     switch (choice1) {
                         case 1:
-                            for (int k = a; k > 0; k--) {
-                                for (int l = 1; l <= k; l++) {
+                            for (int i = a; i > 0; i--) {
+                                for (int j = 1; j <= i; j++) {
                                     System.out.print("*");
                                 }
                                 System.out.println();
                             }
                             break;
                         case 2:
-                            for (int m = 0; m < a; m++) {
-                                for (int n = 0; n < a ; n++) {
-                                    if (n < m) {
+                            for (int i = 0; i < a; i++) {
+                                for (int j = 0; j < a ; j++) {
+                                    if (i < j) {
                                         System.out.print(" ");
                                     } else {
                                         System.out.print("*");
@@ -58,19 +58,19 @@ public class HienThiHinhAnh {
                             }
                             break;
                         case 3:
-                            for (int p = 1; p <= a; p++) {
-                                for (int q = 1; q <= p; q++) {
+                            for (int i = 1; i <= a; i++) {
+                                for (int j = 1; j <= i; j++) {
                                     System.out.print("*");
                                 }
                                 System.out.println();
                             }
                             break;
                         case 4:
-                            for (int x = 0; x < a; x++) {
-                                for (int y = a - x; y > 0; y--) {
+                            for (int i = 0; i < a; i++) {
+                                for (int j = a - i; j > 0; j--) {
                                     System.out.print(" ");
                                 }
-                                for (int z = 1; z <= x + 1; z++) {
+                                for (int z = 1; z <= i + 1; z++) {
                                     System.out.print("*");
                                 }
                                 System.out.println();
@@ -83,11 +83,11 @@ public class HienThiHinhAnh {
                 case 3:
                     System.out.print("Nhập chiều cao của tam giác cân: ");
                     int h = Integer.parseInt(scanner.nextLine());
-                    for (int e = 0; e < h; e++) {
-                        for (int f = h - e; f > 0; f--) {
+                    for (int i = 0; i < h; i++) {
+                        for (int j = h - i; j > 0; j--) {
                             System.out.print(" ");
                         }
-                        for (int g = 1; g <= e * 2 + 1; g++) {
+                        for (int g = 1; g <= i * 2 + 1; g++) {
                             System.out.print("*");
                         }
                         System.out.println();
