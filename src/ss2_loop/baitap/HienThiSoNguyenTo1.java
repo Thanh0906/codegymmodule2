@@ -4,12 +4,12 @@ import java.util.Scanner;
 
 public class HienThiSoNguyenTo1 {
     public static void main(String[] args) {
-        Scanner scanner =new Scanner(System.in);
-        System.out.println("nhập vào giá trị từ bàn phím");
-        int number = Integer.parseInt(scanner.nextLine());
+        //Scanner scanner =new Scanner(System.in);
+        //System.out.println("Bạn muốn hiển thị bao nhiêu số nguyên tố");
+       // int number = Integer.parseInt(scanner.nextLine());
         int cuont = 0;
         int N =2;
-        while (cuont<number){
+        while (cuont<20){
             int i=2;
             boolean  check= true;
             while (i<=Math.sqrt(N)){
