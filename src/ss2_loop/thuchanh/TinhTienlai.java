@@ -2,11 +2,11 @@ package ss2_loop.thuchanh;
 
 import java.util.Scanner;
 
-public class tinhtienlai {
+public class TinhTienlai {
     public static void main(String[] args) {
-        double money =1.0;
-        int month =1;
-        double interset =1.0;
+        double money;
+        int month;
+        double interset;
         Scanner input = new Scanner(System.in);
         System.out.println("nhập số tiền ");
         money =input.nextDouble();

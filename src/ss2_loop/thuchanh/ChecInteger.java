@@ -2,7 +2,7 @@ package ss2_loop.thuchanh;
 
 import java.util.Scanner;
 
-public class checkinteger {
+public class ChecInteger {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("nhập vào số");
@@ -20,9 +20,9 @@ public class checkinteger {
                 i++;
             }
             if (check)
-                System.out.println(number + " đay là    số nguyên tố");
+                System.out.println(number + " là số nguyên tố");
             else
-                System.out.println(number + " đây không phải là số nguyên tố");
+                System.out.println(number + " không phải là số nguyên tố");
         }
     }
 }

@@ -1,4 +1,4 @@
-package ss1_01_java.thuc_hanh;
+package ss1_java.thuc_hanh;
 
 public class KhaiBaoVaSuDungBien {
     public static void main(String[] args) {
