@@ -7,9 +7,9 @@ public class HienThiSoNguyenTo1 {
         //Scanner scanner =new Scanner(System.in);
         //System.out.println("Bạn muốn hiển thị bao nhiêu số nguyên tố");
        // int number = Integer.parseInt(scanner.nextLine());
-        int cuont = 0;
+        int count = 0;
         int N =2;
-        while (cuont<20){
+        while (count<20){
             int i=2;
             boolean  check= true;
             while (i<=Math.sqrt(N)){
@@ -20,7 +20,7 @@ public class HienThiSoNguyenTo1 {
             }
             if (check){
                 System.out.println(N);
-                cuont++;
+                count++;
             }
             N++;
         }
