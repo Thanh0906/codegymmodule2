@@ -3,7 +3,7 @@ package ss3_mangvaphuongthuc.bai_tap;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class MinOnMang {
+public class NhoNhatTrongMang {
     public static void main(String[] args) {
         Scanner scanner =new Scanner(System.in);
         System.out.println("nhập size của mnagr");

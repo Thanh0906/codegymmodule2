@@ -2,7 +2,7 @@ package ss3_mangvaphuongthuc.bai_tap;
 
 import java.util.Scanner;
 
-public class MaxOnMangHaiChieu {
+public class LonNhatTrongMangHaiChieu {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Hãy nhập số hàng của mảng : ");

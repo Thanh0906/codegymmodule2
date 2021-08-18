@@ -1,6 +1,5 @@
 package ss3_mangvaphuongthuc.bai_tap;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -9,12 +8,13 @@ public class ThemPhanTuVaoMang {
         Scanner scanner =new Scanner(System.in);
         System.out.println("nhập vào chiều dài của mảng");
         int N= Integer.parseInt(scanner.nextLine());
-        int array[]= new int[N];
+        int[] array= new int[N];
         for (int i = 0;i<array.length;i++){
             System.out.println("hãy nhập phần tử có vị trí là "+i);
             array[i]=Integer.parseInt(scanner.nextLine());
         }
         System.out.println("mảng vừa tạo là"+ Arrays.toString(array));
+
         System.out.println("nhập phần từ mà bạn muốn thêm");
         int X = Integer.parseInt(scanner.nextLine());
         System.out.println("nhập vị trí bạn muốn thêm");
