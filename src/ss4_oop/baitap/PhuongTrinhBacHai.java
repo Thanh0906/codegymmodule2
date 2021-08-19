@@ -9,11 +9,11 @@ public class PhuongTrinhBacHai {
         private double b;
         private double c;
 
-        public Quadraticequation() {
+        Quadraticequation() {
 
         }
 
-        public Quadraticequation(double a, double b, double c) {
+        Quadraticequation(double a, double b, double c) {
             this.a = a;
             this.b = b;
             this.c = c;
@@ -62,6 +62,16 @@ public class PhuongTrinhBacHai {
                 return (-this.b - (Math.pow(getDiscriminant(), 0.5))) / (2 * this.a);
             }
         }
+        public void getRoot() {
+            if (this.getDiscriminant() < 0) {
+                System.out.print("Phương trình đã cho vô nghiệm");
+            } else if (this.getDiscriminant() == 0) {
+                System.out.print("Phương trình đã cho có nghiệm kép là: x = " + this.getRoot1());
+            } else {
+                System.out.print("Phương trình đã cho có nghiệm là: x1 = " + this.getRoot1() + " và x2 = " + this.getRoot2())
+                ;
+            }
+        }
     }
 
     public static void main(String[] args) {
@@ -73,13 +83,7 @@ public class PhuongTrinhBacHai {
         System.out.println("nhập số c");
         double c = Double.parseDouble(scanner.nextLine());
         Quadraticequation quadraticequation = new Quadraticequation(a, b, c);
-        if (quadraticequation.getDiscriminant() < 0) {
-            System.out.print("Phương trình đã cho vô nghiệm");
-        } else if (quadraticequation.getDiscriminant() == 0) {
-            System.out.print("Phương trình đã cho có nghiệm kép là: x = " + quadraticequation.getRoot1());
-        } else {
-            System.out.print("Phương trình đã cho có nghiệm là: x1 = " + quadraticequation.getRoot1() + " và x2 = " + quadraticequation.getRoot2())
-            ;
-        }
+        quadraticequation.getRoot();
+
     }
 }

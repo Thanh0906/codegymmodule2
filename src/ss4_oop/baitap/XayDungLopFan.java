@@ -2,7 +2,9 @@ package ss4_oop.baitap;
 
 public class XayDungLopFan {
     public static class Fan {
-        public static final int SLOW = 1, MEDIUM = 2, FAST = 3;
+        public static final int SLOW = 1;
+        public static final int MEDIUM = 2;
+        public static final int FAST = 3;
         private int speed = SLOW;
         private boolean on = false;
         private double radius = 5.0;
@@ -24,6 +26,10 @@ public class XayDungLopFan {
             return speed;
         }
 
+        public boolean isOn() {
+            return on;
+        }
+
         public double getRadius() {
             return radius;
         }
@@ -32,9 +38,6 @@ public class XayDungLopFan {
             return color;
         }
 
-        public boolean isOn() {
-            return on;
-        }
 
         public void setSpeed(int speed) {
             this.speed = speed;

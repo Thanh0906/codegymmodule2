@@ -1,4 +1,4 @@
-package ss5_Accessmodifiestaticmethodstaticproperty.thuchanh.StaticProperty;
+package ss5_Accessmodifiestaticmethodstaticproperty.thuchanh.staticproperty;
 
 public class TestStaticProperty {
     public static void main(String[] args) {

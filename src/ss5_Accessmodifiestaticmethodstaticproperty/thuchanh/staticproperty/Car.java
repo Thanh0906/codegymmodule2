@@ -1,4 +1,4 @@
-package ss5_Accessmodifiestaticmethodstaticproperty.thuchanh.StaticProperty;
+package ss5_Accessmodifiestaticmethodstaticproperty.thuchanh.staticproperty;
 
 public class Car {
     private String name;
