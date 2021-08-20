@@ -1,4 +1,4 @@
-package ss5_Accessmodifiestaticmethodstaticproperty.baitap.xaydunglopchighitrongjava;
+package ss5_accessmodifiestaticmethodstaticproperty.baitap.xaydunglopchighitrongjava;
 
 public class Student {
     private String name ="John" ;

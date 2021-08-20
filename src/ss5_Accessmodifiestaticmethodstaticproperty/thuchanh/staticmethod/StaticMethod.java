@@ -1,4 +1,4 @@
-package ss5_Accessmodifiestaticmethodstaticproperty.thuchanh;
+package ss5_accessmodifiestaticmethodstaticproperty.thuchanh.staticmethod;
 
 public class StaticMethod {
     public static class Student{
@@ -15,15 +15,5 @@ public class StaticMethod {
         void display(){
             System.out.println(rollno + " " + name + " " + college);
         }
-    }
-
-    public static void main(String[] args) {
-        Student.change();
-        Student s1 = new Student(111, "Hoang");
-        Student s2 = new Student(222, "Khanh");
-        Student s3 = new Student(333, "Nam");
-        s1.display();
-        s2.display();
-        s3.display();
     }
 }
