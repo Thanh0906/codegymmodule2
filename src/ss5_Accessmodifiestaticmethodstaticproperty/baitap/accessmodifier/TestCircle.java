@@ -1,4 +1,4 @@
-package ss5_Accessmodifiestaticmethodstaticproperty.baitap.accessmodifier;
+package ss5_accessmodifiestaticmethodstaticproperty.baitap.accessmodifier;
 
 public class TestCircle {
     public static void main(String[] args) {

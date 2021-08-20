@@ -1,4 +1,4 @@
-package ss5_Accessmodifiestaticmethodstaticproperty.baitap.accessmodifier;
+package ss5_accessmodifiestaticmethodstaticproperty.baitap.accessmodifier;
 
 public class Circle {
     private double radius=1.0;
