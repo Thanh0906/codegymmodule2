@@ -1,4 +1,4 @@
-package ss5_accessmodifiestaticmethodstaticproperty.baitap.xaydunglopchighitrongjava;
+package ss5_accessmodifi_estaticmethod_staticproperty.baitap.xaydunglopchighitrongjava;
 
 public class TestStudent {
     public static void main(String[] args) {

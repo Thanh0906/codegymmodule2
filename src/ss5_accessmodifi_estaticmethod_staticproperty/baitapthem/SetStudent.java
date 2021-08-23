@@ -1,6 +1,5 @@
-package ss5_accessmodifiestaticmethodstaticproperty.baitapthem;
+package ss5_accessmodifi_estaticmethod_staticproperty.baitapthem;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class SetStudent{
