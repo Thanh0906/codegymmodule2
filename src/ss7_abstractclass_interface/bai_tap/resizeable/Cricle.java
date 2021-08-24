@@ -38,4 +38,7 @@ public class Cricle extends Shape{
                 + ", which is a subclass of "
                 + super.toString();
     }
+    public void resize(double percent) {
+        this.radius *= (percent / 200);
+    }
 }

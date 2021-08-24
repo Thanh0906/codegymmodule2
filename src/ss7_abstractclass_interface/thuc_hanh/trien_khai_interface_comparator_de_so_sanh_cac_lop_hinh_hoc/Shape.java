@@ -1,4 +1,4 @@
-package ss7_abstractclass_interface.bai_tap.resizeable;
+package ss7_abstractclass_interface.thuc_hanh.trien_khai_interface_comparator_de_so_sanh_cac_lop_hinh_hoc;
 
 public class Shape {
     private String color = "green";
@@ -34,9 +34,5 @@ public class Shape {
                 + getColor()
                 + " and "
                 + (isFilled() ? "filled" : "not filled");
-    }
-
-
-    public void resize(double v) {
     }
 }
