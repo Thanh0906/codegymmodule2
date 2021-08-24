@@ -13,6 +13,7 @@ public class SetStudent {
 
 
     public static void add() {
+
         System.out.println("nhập tên của sinh viên :");
         String name = scanner.nextLine();
         System.out.println("nhập tuổi : ");
@@ -21,11 +22,15 @@ public class SetStudent {
         String house =scanner.nextLine();
         System.out.println("nhập tên đường " );
         String stress =scanner.nextLine();
+        System.out.println("nhập tên phuong " );
+        String ward =scanner.nextLine();
+        System.out.println("nhập tên quan " );
+        String district =scanner.nextLine();
         System.out.println("nhập tên thành phó " );
-        String city =scanner.nextLine();
+        String province =scanner.nextLine();
         for (int i = 0; i < studentList.length; i++) {
             if (studentList[i] == null) {
-                Address address=new Address(house,stress,city);
+                Address address=new Address(house,stress,ward,district,province);
                 studentList[i] = new Student(name,age,address);
                 break;
             }else {
