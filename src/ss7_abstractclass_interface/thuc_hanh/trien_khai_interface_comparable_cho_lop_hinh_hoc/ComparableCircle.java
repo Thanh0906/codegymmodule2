@@ -2,7 +2,6 @@ package ss7_abstractclass_interface.thuc_hanh.trien_khai_interface_comparable_ch
 
 public class ComparableCircle extends  Cricle implements Comparable<ComparableCircle>{
     public ComparableCircle() {
-        super();
     }
 
     public ComparableCircle(double radius) {

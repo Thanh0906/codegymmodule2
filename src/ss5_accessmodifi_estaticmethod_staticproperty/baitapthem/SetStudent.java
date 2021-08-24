@@ -7,7 +7,7 @@ public class SetStudent {
     public static Student[] studentList = new Student[100];
 
     static {
-        studentList[0] = new Student("Thanh", 23, "Thanh Khê Tây");
+        studentList[0] = new Student("Thanh", 23,"null");
         studentList[1] = new Student("Huy", 23, "Hà Huy Tập");
     }
 

@@ -7,14 +7,12 @@ public class Test {
         shapes[0] = new Cricle(x, "yellow", false);
         shapes[1] = new Rectangle(x, x, "infinity", true);
         shapes[2] = new Square(x, "melinda", true);
-        for (Shape a : shapes){
-            System.out.println(a);
+        for (Shape shape : shapes){
+            System.out.println(shape);
         }
 
-        for (Shape a : shapes) {
-            a.resize(Math.random() * 1000);
+        for (Shape shape : shapes) {
+            shape.resize(Math.random() * 1000);
         }
-        System.out.println("\n");
-
     }
 }
