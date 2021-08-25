@@ -2,7 +2,6 @@ package ss7_abstractclass_interface.bai_tap.resizeable;
 
 public class Test {
     public static void main(String[] args) {
-        //  int x = (int) Math.floor(Math.random() * 10);
         Shape[] shapes = new Shape[3];
         shapes[0] = new Cricle(3);
         shapes[1] = new Ractange(3, 4);
@@ -29,7 +28,7 @@ public class Test {
         }
         System.out.println("Sau khi thay đổi kích thước: ");
         for (Shape shape : shapes) {
-         //   System.out.println(shape);
+
             if (shape instanceof Cricle) {
                 System.out.println("Diện tích hình tròn sau khi thay đổi kích thước là: " + ((Cricle) shape).getArea());
             }
