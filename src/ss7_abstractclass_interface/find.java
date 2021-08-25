@@ -12,8 +12,8 @@ public class find {
         chuoi=scanner.nextLine();
         char mangKiTu[]=chuoi.toCharArray();
         for ( int i =0;i<mangKiTu.length;i++){
-            for (int j = i+1;j<mangKiTu.length-1;j++){
-                if (mangKiTu[i] == mangKiTu[j]){
+            for (int j = mangKiTu.length-1;j>i;j--){
+                if (mangKiTu[j] == mangKiTu[i]){
                     soLan++;
                 }
             }

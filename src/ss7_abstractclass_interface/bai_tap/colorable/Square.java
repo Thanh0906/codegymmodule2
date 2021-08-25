@@ -1,6 +1,9 @@
 package ss7_abstractclass_interface.bai_tap.colorable;
 
 public class Square extends Rantange implements Colorable {
+    public Square() {
+
+    }
     public Square(boolean b, int i) {
     }
 
@@ -12,17 +15,8 @@ public class Square extends Rantange implements Colorable {
         super(side, side, color, filled);
     }
 
-    public Square() {
-
-    }
-
     public double getSide() {
         return getWidth();
-    }
-
-    public void setSide(double side) {
-        setWidth(side);
-        setHeight(side);
     }
 
     private void setHeight(double side) {

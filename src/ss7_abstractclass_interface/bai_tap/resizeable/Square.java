@@ -1,6 +1,6 @@
 package ss7_abstractclass_interface.bai_tap.resizeable;
 
-public class Square extends  Rectangle{
+public class Square extends Ractange implements Resizeable{
     private double side;
     public Square() {
     }
@@ -23,6 +23,7 @@ public class Square extends  Rectangle{
         return "A Square with side = " + getSide() + ", which is a subclass of " + super.toString();
     }
     public void resize(double percent) {
-        this.side *= (percent / 200);
+
+        this.setSide(this.getSide() * Math.sqrt(1 + percent / 100));
     }
 }

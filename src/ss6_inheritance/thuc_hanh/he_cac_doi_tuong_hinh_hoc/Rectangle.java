@@ -49,5 +49,4 @@ public class Rectangle extends Shape {
                 + ", which is a subclass of "
                 + super.toString();
     }
-
 }

@@ -4,6 +4,7 @@ public class Cricle extends Shape{
     private double radius = 1.0;
 
     public void Circle() {
+
     }
 
     public void Cricle(double radius) {

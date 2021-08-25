@@ -1,6 +1,6 @@
 package ss7_abstractclass_interface.bai_tap.resizeable;
 
-public class Cricle extends Shape{
+public class Cricle extends Shape implements Resizeable{
     private double radius = 1.0;
 
     public Cricle() {
@@ -33,12 +33,12 @@ public class Cricle extends Shape{
 
     @Override
     public String toString() {
-        return "A Circle with radius="
+        return "Bán kính là"
                 + getRadius()
-                + ", which is a subclass of "
+                + ",Kế thừa của lớp cha "
                 + super.toString();
     }
     public void resize(double percent) {
-        this.radius *= (percent / 200);
+        this.setRadius(this.getRadius() * Math.sqrt(1 + percent / 100));
     }
 }

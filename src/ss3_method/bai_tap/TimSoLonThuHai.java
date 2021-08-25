@@ -1,4 +1,4 @@
-package ss3_mangvaphuongthuc.bai_tap;
+package ss3_method.bai_tap;
 
 import com.sun.deploy.security.SelectableSecurityManager;
 

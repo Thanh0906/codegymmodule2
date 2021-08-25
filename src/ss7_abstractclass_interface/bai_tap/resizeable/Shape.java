@@ -37,6 +37,4 @@ public class Shape {
     }
 
 
-    public void resize(double v) {
-    }
 }
