@@ -28,7 +28,7 @@ public class Test {
         }
         System.out.println("Sau khi thay đổi kích thước: ");
         for (Shape shape : shapes) {
-
+        
             if (shape instanceof Cricle) {
                 System.out.println("Diện tích hình tròn sau khi thay đổi kích thước là: " + ((Cricle) shape).getArea());
             }
