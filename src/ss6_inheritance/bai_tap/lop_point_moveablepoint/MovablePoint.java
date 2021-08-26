@@ -50,9 +50,10 @@ public class MovablePoint extends Point {
                 ", ySpeed=" + ySpeed +
                 '}';
     }
-    public void movie(){
-        super.setxy(super.getX()+ xSpeed, super.getY() + ySpeed);
-
+    public MovablePoint movie(){
+        this.setX(this.getX() + this.xSpeed);
+        this.setY(this.getY() + this.ySpeed);
+        return this;
 
     }
 }
