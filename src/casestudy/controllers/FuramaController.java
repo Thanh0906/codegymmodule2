@@ -1,0 +1,147 @@
+package casestudy.controllers;
+
+import java.util.Scanner;
+
+public class FuramaController {
+        public static void displayMainMenu() {
+            Scanner scanner = new Scanner(System.in);
+            int choice = -1;
+            do {
+                System.out.println("Menu: ");
+                System.out.println("1. Employee Management ");
+                System.out.println("2. Customer Management ");
+                System.out.println("3. Facility Management ");
+                System.out.println("4. Booking Management ");
+                System.out.println("5. Promotion Management ");
+                System.out.println("6. Exit ");
+                System.out.println("Enter your choice: ");
+                choice = Integer.parseInt(scanner.nextLine());
+                switch (choice) {
+                    case 1:
+                        int choiceNumber1 = 0;
+                        do {
+                            System.out.println("1. Display list employees ");
+                            System.out.println("2. Add new employee ");
+                            System.out.println("3. Edit employee ");
+                            System.out.println("4. Return main menu ");
+                            System.out.println("Enter your choice: ");
+                            choiceNumber1 = Integer.parseInt(scanner.nextLine());
+                            switch (choiceNumber1) {
+                                case 1:
+                                    break;
+                                case 2:
+                                    break;
+                                case 3:
+                                    break;
+                                case 4:
+                                    break;
+                                default:
+                                    System.out.println("Error. Please re-enter your choice.");
+                            }
+                        } while (choiceNumber1 != 4);
+                        break;
+                    case 2:
+                        int choiceNumber2 = 0;
+                        do {
+                            System.out.println("1. Display list customers ");
+                            System.out.println("2. Add new customer ");
+                            System.out.println("3. Edit customer ");
+                            System.out.println("4. Return main menu ");
+                            System.out.println("Enter your choice: ");
+                            choiceNumber2 = Integer.parseInt(scanner.nextLine());
+                            switch (choiceNumber2) {
+                                case 1:
+                                    break;
+                                case 2:
+                                    break;
+                                case 3:
+                                    break;
+                                case 4:
+                                    break;
+                                default:
+                                    System.out.println("Error. Please re-enter your choice.");
+                            }
+                        } while (choiceNumber2 != 4);
+                        break;
+                    case 3:
+                        int choiceNumber3 = 0;
+                        do {
+                            System.out.println("1. Display list facility ");
+                            System.out.println("2. Add new facility ");
+                            System.out.println("3. Display list facility maintenance ");
+                            System.out.println("4. Return main menu ");
+                            System.out.println("Enter your choice: ");
+                            choiceNumber3 = Integer.parseInt(scanner.nextLine());
+                            switch (choiceNumber3) {
+                                case 1:
+                                    break;
+                                case 2:
+                                    break;
+                                case 3:
+                                    break;
+                                case 4:
+                                    break;
+                                default:
+                                    System.out.println("Error. Please re-enter your choice.");
+                            }
+                        } while (choiceNumber3 != 4);
+                        break;
+                    case 4:
+                        int choiceNumber4 = 0;
+                        do {
+                            System.out.println("1. Add new booking ");
+                            System.out.println("2. Display list booking ");
+                            System.out.println("3. Create new contracts ");
+                            System.out.println("4. Display list contracts ");
+                            System.out.println("5. Edit contracts ");
+                            System.out.println("6. Return main menu ");
+                            System.out.println("Enter your choice: ");
+                            choiceNumber4 = Integer.parseInt(scanner.nextLine());
+                            switch (choiceNumber4) {
+                                case 1:
+                                    break;
+                                case 2:
+                                    break;
+                                case 3:
+                                    break;
+                                case 4:
+                                    break;
+                                case 5:
+                                    break;
+                                case 6:
+                                    break;
+                                default:
+                                    System.out.println("Error. Please re-enter your choice.");
+                            }
+                        } while (choiceNumber4 != 6);
+                        break;
+                    case 5:
+                        int choiceNumber5 = 0;
+                        do {
+                            System.out.println("1. Display list customers use service ");
+                            System.out.println("2. Display list customers get voucher ");
+                            System.out.println("3. Return main menu ");
+                            System.out.println("Enter your choice: ");
+                            choiceNumber5 = Integer.parseInt(scanner.nextLine());
+                            switch (choiceNumber5) {
+                                case 1:
+                                    break;
+                                case 2:
+                                    break;
+                                case 3:
+                                    break;
+                                default:
+                                    System.out.println("Error. Please re-enter your choice.");
+                            }
+                        } while (choiceNumber5 != 3);
+                        break;
+                    case 6:
+                        System.exit(6);
+                }
+            } while (choice != 6);
+        }
+
+        public static void main(String[] args) {
+            displayMainMenu();
+        }
+}

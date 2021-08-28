@@ -15,6 +15,7 @@ public class TestStudent {
             System.out.println("5. Exit");
             System.out.println("Choice: ");
             choice = Integer.parseInt(scanner.nextLine());
+
             switch (choice) {
                 case 1:
                     SetStudent.add();
