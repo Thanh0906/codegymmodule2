@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class FuramaController {
         public static void displayMainMenu() {
             Scanner scanner = new Scanner(System.in);
-            int choice = -1;
+            int choice;
             do {
                 System.out.println("Menu: ");
                 System.out.println("1. Employee Management ");
@@ -18,7 +18,7 @@ public class FuramaController {
                 choice = Integer.parseInt(scanner.nextLine());
                 switch (choice) {
                     case 1:
-                        int choiceNumber1 = 0;
+                        int choiceNumber1 = -1;
                         do {
                             System.out.println("1. Display list employees ");
                             System.out.println("2. Add new employee ");
@@ -41,7 +41,7 @@ public class FuramaController {
                         } while (choiceNumber1 != 4);
                         break;
                     case 2:
-                        int choiceNumber2 = 0;
+                        int choiceNumber2 = -1;
                         do {
                             System.out.println("1. Display list customers ");
                             System.out.println("2. Add new customer ");
@@ -64,7 +64,7 @@ public class FuramaController {
                         } while (choiceNumber2 != 4);
                         break;
                     case 3:
-                        int choiceNumber3 = 0;
+                        int choiceNumber3 = -1;
                         do {
                             System.out.println("1. Display list facility ");
                             System.out.println("2. Add new facility ");
@@ -87,7 +87,7 @@ public class FuramaController {
                         } while (choiceNumber3 != 4);
                         break;
                     case 4:
-                        int choiceNumber4 = 0;
+                        int choiceNumber4 = -1;
                         do {
                             System.out.println("1. Add new booking ");
                             System.out.println("2. Display list booking ");
@@ -116,7 +116,7 @@ public class FuramaController {
                         } while (choiceNumber4 != 6);
                         break;
                     case 5:
-                        int choiceNumber5 = 0;
+                        int choiceNumber5;
                         do {
                             System.out.println("1. Display list customers use service ");
                             System.out.println("2. Display list customers get voucher ");
