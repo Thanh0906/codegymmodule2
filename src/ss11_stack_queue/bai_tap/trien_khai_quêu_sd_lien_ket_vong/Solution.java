@@ -1,7 +1,7 @@
 package ss11_stack_queue.bai_tap.trien_khai_quêu_sd_lien_ket_vong;
 
 public class Solution {
-    public void enQueue(Queue queue, int value){
+    public <P> void enQueue(Queue<P> queue, int value){
         Node temp = new Node();
         temp.data = value;
         if (queue.front == null) {
@@ -13,7 +13,7 @@ public class Solution {
         queue.rear.link = queue.front;
 
     }
-    public void deQueue(Queue queue){
+    public <P> void deQueue(Queue<P> queue){
         if (queue.front == null) {
             System.out.print("Queue is empty");
         }
@@ -31,7 +31,7 @@ public class Solution {
         }
 
     }
-    public void displayQueue(Queue queue){
+    public <P> void displayQueue(Queue<P> queue){
         Node temp = queue.front;
         System.out.print("Element in Queue: ");
         while (temp.link != queue.front) {

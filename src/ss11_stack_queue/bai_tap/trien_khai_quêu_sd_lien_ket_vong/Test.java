@@ -1,8 +1,8 @@
 package ss11_stack_queue.bai_tap.trien_khai_quêu_sd_lien_ket_vong;
 
 public class Test {
-    public static void main(String[] args) {
-        Queue queue = new Queue();
+    public static <P> void main(String[] args) {
+        Queue<P> queue = new Queue<P>();
         queue.front = null;
         queue.rear = null;
         Solution solution = new Solution();

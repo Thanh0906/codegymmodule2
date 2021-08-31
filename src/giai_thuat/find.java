@@ -1,4 +1,4 @@
-package bai1_tap_them;
+package giai_thuat;
 
 public class find {
     public static String[] find1(String str) {
