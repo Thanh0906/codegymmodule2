@@ -1,17 +1,20 @@
 package ss11_stack_queue.bai_tap.to_chuc_du_lieu_hop_li_demerging_sd_queue;
 
+import java.time.LocalDate;
+
 public class Person implements Comparable<Person> {
     private String name;
     private String gender;
-    private int age;
+    private LocalDate dateOfBirth;
 
     public Person() {
+
     }
 
-    public Person (String name, String gender, int dateOfBirth) {
+    public Person(String name, String gender, LocalDate dateOfBirth) {
         this.name = name;
         this.gender = gender;
-        this.age = dateOfBirth;
+        this.dateOfBirth = dateOfBirth;
     }
 
     public String getName() {
@@ -30,29 +33,27 @@ public class Person implements Comparable<Person> {
         this.gender = gender;
     }
 
-    public int getAge() {
-        return age;
+    public LocalDate getDateOfBirth() {
+        return dateOfBirth;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setDateOfBirth(LocalDate dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
     }
 
     @Override
     public String toString() {
         return "Person{" +
                 "name='" + name + '\'' +
-                ", gender='" + gender + '\'' +
-                ", dateOfBirth=" + age +
+                ", gender=" + gender +
+                ", dateOfBirth=" + dateOfBirth +
                 '}';
     }
 
     @Override
     public int compareTo(Person o) {
-       if (this.getAge()>o.getAge()){
-           return 1;
-       }else {
-           return -1;
-       }
+        return this.getDateOfBirth().compareTo(o.getDateOfBirth());
     }
+
+
 }
