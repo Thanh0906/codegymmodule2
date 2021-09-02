@@ -1,5 +1,10 @@
 package casestudy.controllers;
 
+import casestudy.models.Facility;
+import casestudy.sevices.CustomerServiceImpl;
+import casestudy.sevices.EmployeeServiceImpl;
+import casestudy.sevices.FacilityServiceImpl;
+
 import java.util.Scanner;
 
 public class FuramaController {
@@ -18,6 +23,7 @@ public class FuramaController {
                 choice = Integer.parseInt(scanner.nextLine());
                 switch (choice) {
                     case 1:
+                        EmployeeServiceImpl employeeService = new EmployeeServiceImpl();
                         int choiceNumber1 = -1;
                         do {
                             System.out.println("1. Display list employees ");
@@ -28,10 +34,13 @@ public class FuramaController {
                             choiceNumber1 = Integer.parseInt(scanner.nextLine());
                             switch (choiceNumber1) {
                                 case 1:
+                                    employeeService.display();
                                     break;
                                 case 2:
+                                    employeeService.addNew();
                                     break;
                                 case 3:
+                                    employeeService.edit();
                                     break;
                                 case 4:
                                     break;
@@ -41,6 +50,7 @@ public class FuramaController {
                         } while (choiceNumber1 != 4);
                         break;
                     case 2:
+                        CustomerServiceImpl customerService = new CustomerServiceImpl();
                         int choiceNumber2 = -1;
                         do {
                             System.out.println("1. Display list customers ");
@@ -51,10 +61,13 @@ public class FuramaController {
                             choiceNumber2 = Integer.parseInt(scanner.nextLine());
                             switch (choiceNumber2) {
                                 case 1:
+                                    customerService.display();
                                     break;
                                 case 2:
+                                    customerService.addNew();
                                     break;
                                 case 3:
+                                    customerService.edit();
                                     break;
                                 case 4:
                                     break;
@@ -64,6 +77,7 @@ public class FuramaController {
                         } while (choiceNumber2 != 4);
                         break;
                     case 3:
+                        FacilityServiceImpl facilityService = new FacilityServiceImpl();
                         int choiceNumber3 = -1;
                         do {
                             System.out.println("1. Display list facility ");
@@ -74,8 +88,35 @@ public class FuramaController {
                             choiceNumber3 = Integer.parseInt(scanner.nextLine());
                             switch (choiceNumber3) {
                                 case 1:
+                                    facilityService.display();
                                     break;
                                 case 2:
+                                  int choicefacility = -1;
+                                  do {
+                                      System.out.println("Menu");
+                                      System.out.println("1. addNewVilla");
+                                      System.out.println("2. addNewHouse");
+                                      System.out.println("3. addNewRoom");
+                                      System.out.println("4. Return main menu");
+                                      System.out.println("Enter your choice:");
+                                      choicefacility =Integer.parseInt(scanner.nextLine());
+                                      switch (choicefacility){
+                                          case 1:
+                                              facilityService.addNewVilla();
+                                              break;
+                                          case 2:
+                                              facilityService.addNewHouse();
+                                              break;
+                                          case 3:
+                                              facilityService.addNewRoom();
+                                              break;
+                                          case 4:
+                                              break;
+                                          default:
+                                              System.out.println("Error. Please re-enter your choice.");
+                                      }
+
+                                  }while (choicefacility !=4);
                                     break;
                                 case 3:
                                     break;

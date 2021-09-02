@@ -1,6 +1,7 @@
 package casestudy.models;
 
 public class Villa extends Facility{
+
     private double livingRoomArea;//diện tích phòng khách
     private int bedRoomMaster;//phòng ngủ Master
     private int bedRoomSmall;//phòng ngủ nhỏ
@@ -10,7 +11,7 @@ public class Villa extends Facility{
 
     }
 
-    public Villa(double livingRoomArea, int bedRoomMaster, int bedRoomSmall, double poolArea,String greenSpace) {
+    public Villa(double livingRoomArea, int bedRoomMaster, int bedRoomSmall, double poolArea, String greenSpace) {
         this.livingRoomArea = livingRoomArea;
         this.bedRoomMaster = bedRoomMaster;
         this.bedRoomSmall = bedRoomSmall;
@@ -18,13 +19,13 @@ public class Villa extends Facility{
         this.greenSpace = greenSpace;
     }
 
-    public Villa(String nameService, double useArea, double rentalcosts, double numberPeople, double livingRoomArea, int bedRoomMaster, int bedRoomSmall, double poolArea) {
-        super(nameService, useArea, rentalcosts, numberPeople);
+    public Villa(String nameService, double useArea, String roomStandard, double rentalcosts, double numberPeople, String styleRental, double livingRoomArea, int bedRoomMaster, int bedRoomSmall, double poolArea, String greenSpace) {
+        super(nameService, useArea, roomStandard, rentalcosts, numberPeople, styleRental);
         this.livingRoomArea = livingRoomArea;
         this.bedRoomMaster = bedRoomMaster;
         this.bedRoomSmall = bedRoomSmall;
         this.poolArea = poolArea;
-
+        this.greenSpace = greenSpace;
     }
 
     public double getLivingRoomArea() {
@@ -65,5 +66,16 @@ public class Villa extends Facility{
 
     public void setGreenSpace(String greenSpace) {
         this.greenSpace = greenSpace;
+    }
+
+    @Override
+    public String toString() {
+        return "Villa{" +
+                "livingRoomArea=" + livingRoomArea +
+                ", bedRoomMaster=" + bedRoomMaster +
+                ", bedRoomSmall=" + bedRoomSmall +
+                ", poolArea=" + poolArea +
+                ", greenSpace='" + greenSpace + '\'' +
+                '}';
     }
 }

@@ -7,6 +7,8 @@ public class Employee extends Person{
         this.salary =salary;
     }
 
+
+
     @Override
     public void howToMove() {
         System.out.println("Employee by motorbike or car");

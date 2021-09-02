@@ -1,6 +1,6 @@
 package fix_bug;
 
-public abstract  class Person {
+public  abstract  class Person {
     private String name;
     private  int AGE;
     private Address address;

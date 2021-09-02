@@ -10,10 +10,8 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class DemergingUseQueue {
-    private static final String MALE = "male";
+   private static final String MALE = "male";
     private static final String FEMALE = "female";
-
-
 
     public static void main(String[] args) {
         ArrayList<Person> personList = new ArrayList<>();
@@ -43,17 +41,16 @@ public class DemergingUseQueue {
         while (!male.isEmpty()) {
             newPerson.add(male.poll());
         }
-        System.out.println("trước sắp xếp");
-        System.out.println();
-        for (Person person : personList) {
+        System.out.println("trước sắp xếp" );
+       for (Person person : personList) {
             System.out.println(person.toString());
-        }
+       }
 
-        System.out.println("sau khi sắp xếp ");
-        System.out.println();
+        System.out.println("sau khi sắp xếp " );
+      System.out.println();
         for (Person person : newPerson) {
             System.out.println(person.toString());
-        }
+       }
     }
 
 

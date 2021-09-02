@@ -3,19 +3,22 @@ package casestudy.models;
 public abstract  class Facility {
     private String nameService;//tên dịch vụ
     private double useArea;//diện tích
-    private double rentalcosts;//chi phí cho thuê
-    private double numberPeople;//số người
+    private String roomStandard;//tiêu chuẩn phòng
+    private double rentalCosts;//chi phí cho thuê
+    private int numberPeople;//số người
+    private String styleRental;//kiêu thuê
 
     public Facility(){
 
     }
 
-    public Facility(String nameService, double useArea, double rentalcosts, double numberPeople) {
+    public Facility(String nameService, double useArea, String roomStandard, double rentalcosts, int numberPeople, String styleRental) {
         this.nameService = nameService;
         this.useArea = useArea;
-        this.rentalcosts = rentalcosts;
+        this.roomStandard = roomStandard;
+        this.rentalCosts = rentalcosts;
         this.numberPeople = numberPeople;
-
+        this.styleRental = styleRental;
     }
 
     public String getNameService() {
@@ -34,21 +37,47 @@ public abstract  class Facility {
         this.useArea = useArea;
     }
 
-    public double getRentalcosts() {
-        return rentalcosts;
+    public String getRoomStandard() {
+        return roomStandard;
     }
 
-    public void setRentalcosts(double rentalcosts) {
-        this.rentalcosts = rentalcosts;
+    public void setRoomStandard(String roomStandard) {
+        this.roomStandard = roomStandard;
+    }
+
+    public double getRentalCosts() {
+        return rentalCosts;
+    }
+
+    public void setRentalCosts(double rentalCosts) {
+        this.rentalCosts = rentalCosts;
     }
 
     public double getNumberPeople() {
         return numberPeople;
     }
 
-    public void setNumberPeople(double numberPeople) {
+    public void setNumberPeople(int numberPeople) {
         this.numberPeople = numberPeople;
     }
 
+    public String getStyleRental() {
+        return styleRental;
+    }
 
+    public void setStyleRental(String styleRental) {
+        this.styleRental = styleRental;
+    }
+
+    @Override
+    public String toString() {
+        return "Facility{" +
+                "nameService='" + nameService + '\'' +
+                ", useArea=" + useArea +
+                ", roomStandard='" + roomStandard + '\'' +
+                ", rentalcosts=" + rentalCosts +
+                ", numberPeople=" + numberPeople +
+                ", styleRental='" + styleRental + '\'' +
+                '}';
+    }
 }
