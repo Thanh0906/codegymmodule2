@@ -1,4 +1,4 @@
-package fix_bug;
+package fix_bug.baitaifixbugtuan2;
 
 import java.util.Scanner;
 

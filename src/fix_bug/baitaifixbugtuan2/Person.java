@@ -1,4 +1,6 @@
-package fix_bug;
+package fix_bug.baitaifixbugtuan2;
+
+import fix_bug.baitaifixbugtuan2.Address;
 
 public  abstract  class Person {
     private String name;

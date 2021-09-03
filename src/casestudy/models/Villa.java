@@ -19,7 +19,7 @@ public class Villa extends Facility{
         this.greenSpace = greenSpace;
     }
 
-    public Villa(String nameService, double useArea, String roomStandard, double rentalcosts, double numberPeople, String styleRental, double livingRoomArea, int bedRoomMaster, int bedRoomSmall, double poolArea, String greenSpace) {
+    public Villa(String nameService, double useArea, String roomStandard, double rentalcosts, int numberPeople, String styleRental, double livingRoomArea, int bedRoomMaster, int bedRoomSmall, double poolArea, String greenSpace) {
         super(nameService, useArea, roomStandard, rentalcosts, numberPeople, styleRental);
         this.livingRoomArea = livingRoomArea;
         this.bedRoomMaster = bedRoomMaster;
@@ -70,7 +70,7 @@ public class Villa extends Facility{
 
     @Override
     public String toString() {
-        return "Villa{" +
+        return "Villa{" +super.toString()+
                 "livingRoomArea=" + livingRoomArea +
                 ", bedRoomMaster=" + bedRoomMaster +
                 ", bedRoomSmall=" + bedRoomSmall +

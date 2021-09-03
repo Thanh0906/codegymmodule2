@@ -21,6 +21,9 @@ public abstract  class Facility {
         this.styleRental = styleRental;
     }
 
+    public Facility(String nameService, double useArea, double rentalcosts, int numberPeople) {
+    }
+
     public String getNameService() {
         return nameService;
     }

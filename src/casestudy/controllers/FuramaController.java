@@ -1,6 +1,7 @@
 package casestudy.controllers;
 
 import casestudy.models.Facility;
+import casestudy.sevices.BookingServiceImpl;
 import casestudy.sevices.CustomerServiceImpl;
 import casestudy.sevices.EmployeeServiceImpl;
 import casestudy.sevices.FacilityServiceImpl;
@@ -34,13 +35,13 @@ public class FuramaController {
                             choiceNumber1 = Integer.parseInt(scanner.nextLine());
                             switch (choiceNumber1) {
                                 case 1:
-                                    employeeService.display();
+                                    employeeService.displayList();
                                     break;
                                 case 2:
-                                    employeeService.addNew();
+                                    employeeService.addList();
                                     break;
                                 case 3:
-                                    employeeService.edit();
+                                    employeeService.editList();
                                     break;
                                 case 4:
                                     break;
@@ -61,13 +62,13 @@ public class FuramaController {
                             choiceNumber2 = Integer.parseInt(scanner.nextLine());
                             switch (choiceNumber2) {
                                 case 1:
-                                    customerService.display();
+                                    customerService.displayList();
                                     break;
                                 case 2:
-                                    customerService.addNew();
+                                    customerService.addList();
                                     break;
                                 case 3:
-                                    customerService.edit();
+                                    customerService.editList();
                                     break;
                                 case 4:
                                     break;
@@ -88,37 +89,13 @@ public class FuramaController {
                             choiceNumber3 = Integer.parseInt(scanner.nextLine());
                             switch (choiceNumber3) {
                                 case 1:
-                                    facilityService.display();
+                                    facilityService.displayList();
                                     break;
                                 case 2:
-                                  int choicefacility = -1;
-                                  do {
-                                      System.out.println("Menu");
-                                      System.out.println("1. addNewVilla");
-                                      System.out.println("2. addNewHouse");
-                                      System.out.println("3. addNewRoom");
-                                      System.out.println("4. Return main menu");
-                                      System.out.println("Enter your choice:");
-                                      choicefacility =Integer.parseInt(scanner.nextLine());
-                                      switch (choicefacility){
-                                          case 1:
-                                              facilityService.addNewVilla();
-                                              break;
-                                          case 2:
-                                              facilityService.addNewHouse();
-                                              break;
-                                          case 3:
-                                              facilityService.addNewRoom();
-                                              break;
-                                          case 4:
-                                              break;
-                                          default:
-                                              System.out.println("Error. Please re-enter your choice.");
-                                      }
-
-                                  }while (choicefacility !=4);
+                                    facilityService.addList();
                                     break;
                                 case 3:
+                                    facilityService.displayListForMaintenance();
                                     break;
                                 case 4:
                                     break;
@@ -128,6 +105,7 @@ public class FuramaController {
                         } while (choiceNumber3 != 4);
                         break;
                     case 4:
+                        BookingServiceImpl bookingService = new BookingServiceImpl();
                         int choiceNumber4 = -1;
                         do {
                             System.out.println("1. Add new booking ");
@@ -140,8 +118,10 @@ public class FuramaController {
                             choiceNumber4 = Integer.parseInt(scanner.nextLine());
                             switch (choiceNumber4) {
                                 case 1:
+                                    bookingService.addList();
                                     break;
                                 case 2:
+                                    bookingService.displayList();
                                     break;
                                 case 3:
                                     break;

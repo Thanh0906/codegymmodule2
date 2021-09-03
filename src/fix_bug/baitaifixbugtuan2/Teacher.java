@@ -1,4 +1,7 @@
-package fix_bug;
+package fix_bug.baitaifixbugtuan2;
+
+import fix_bug.baitaifixbugtuan2.Address;
+import fix_bug.baitaifixbugtuan2.Person;
 
 public class Teacher extends Person {
     private int salary;

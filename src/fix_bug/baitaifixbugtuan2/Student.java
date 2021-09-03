@@ -1,6 +1,6 @@
-package fix_bug;
+package fix_bug.baitaifixbugtuan2;
 
-public class Student extends  Person{
+public class Student extends Person {
     private static String school = "Codegym";
 
     public Student(String name, int AGE, Address address) {

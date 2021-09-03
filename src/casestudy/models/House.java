@@ -16,13 +16,15 @@ public class House extends Facility {
         this.kitchen = kitchen;
     }
 
-    public House(String nameService, double useArea, double rentalcosts, double numberPeople, int numberFloor, int bedRoomMaster, int bedRoomSmall, int kitchen) {
+    public House(String nameService, double useArea, double rentalcosts, int numberPeople, int numberFloor, int bedRoomMaster, int bedRoomSmall, int kitchen) {
         super(nameService, useArea, rentalcosts, numberPeople);
-        this.numberFloor = numberFloor;
+        this.numberFloor = numberFloor;//só tầng
         this.bedRoomMaster = bedRoomMaster;
         this.bedRoomSmall = bedRoomSmall;
         this.kitchen = kitchen;
     }
+
+
 
     public int getNumberFloor() {
         return numberFloor;
@@ -54,5 +56,16 @@ public class House extends Facility {
 
     public void setKitchen(int kitchen) {
         this.kitchen = kitchen;
+    }
+
+    @Override
+    public String toString() {
+        return "House{" +
+                "numberFloor=" + numberFloor +
+                ", bedRoomMaster=" + bedRoomMaster +
+                ", bedRoomSmall=" + bedRoomSmall +
+                ", kitchen=" + kitchen +
+                super.toString()+
+                '}';
     }
 }

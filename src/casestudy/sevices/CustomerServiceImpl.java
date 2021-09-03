@@ -9,16 +9,11 @@ import java.util.Scanner;
 public class CustomerServiceImpl implements ICustomerService {
     static Scanner scanner = new Scanner(System.in);
     List<Customer> customerList  = new LinkedList<>();
-    @Override
-    public void display() {
-        for (Customer customer :customerList){
-            System.out.println(customer.toString());
-        }
 
-    }
+
 
     @Override
-    public void addNew() {
+    public void addList() {
         System.out.println("nhập id :");
         int id = Integer.parseInt(scanner.nextLine());
         System.out.println("nhập tên :");
@@ -36,14 +31,22 @@ public class CustomerServiceImpl implements ICustomerService {
         System.out.println("nhập vị trí :");
         String addressCustomer = scanner.nextLine();
 
-       Customer customer = new Customer(id, name, age, sex, idCard, email,typeCustomer,addressCustomer);
-       customerList.add(customer);
-       System.out.println("dã thêm mới thành công");
+        Customer customer = new Customer(id, name, age, sex, idCard, email,typeCustomer,addressCustomer);
+        customerList.add(customer);
+        System.out.println("dã thêm mới thành công");
 
     }
 
     @Override
-    public void edit() {
+    public void displayList() {
+        for (Customer customer :customerList){
+            System.out.println(customer.toString());
+        }
+
+    }
+
+    @Override
+    public void editList() {
         System.out.println("nhập id mà bạn muốn sửa");
         int idOfEdit = Integer.parseInt(scanner.nextLine());
         boolean check = false;
@@ -80,7 +83,7 @@ public class CustomerServiceImpl implements ICustomerService {
                     case 4:
                         System.out.print("Nhập lại số CMND ");
                         int inputNewId = Integer.parseInt(scanner.nextLine());
-                       customerList.get(i).setIdCard(inputNewId);
+                        customerList.get(i).setIdCard(inputNewId);
                         break;
                     case 5:
                         System.out.print("Nhập lại email ");
@@ -111,6 +114,4 @@ public class CustomerServiceImpl implements ICustomerService {
         }
 
     }
-
-
 }
