@@ -5,7 +5,7 @@ public class House extends Facility {
     private int bedRoomMaster;//phòng ngủ Master
     private int bedRoomSmall;//phòng ngủ nhỏ
     private int kitchen;//phòng bếp
-    public House(){
+    public House(String idFacility, String nameService, double useArea, double rentalCosts, int numberPeople, int numberFloor, int bedRoomMaster, int bedRoomSmall, int kitchen){
 
     }
 
@@ -16,15 +16,13 @@ public class House extends Facility {
         this.kitchen = kitchen;
     }
 
-    public House(String nameService, double useArea, double rentalcosts, int numberPeople, int numberFloor, int bedRoomMaster, int bedRoomSmall, int kitchen) {
-        super(nameService, useArea, rentalcosts, numberPeople);
-        this.numberFloor = numberFloor;//só tầng
+    public House(String idFacility, String nameService, double useArea, String roomStandard, double rentalCosts, int numberPeople, String styleRental, int numberFloor, int bedRoomMaster, int bedRoomSmall, int kitchen) {
+        super(idFacility, nameService, useArea, roomStandard, rentalCosts, numberPeople, styleRental);
+        this.numberFloor = numberFloor;
         this.bedRoomMaster = bedRoomMaster;
         this.bedRoomSmall = bedRoomSmall;
         this.kitchen = kitchen;
     }
-
-
 
     public int getNumberFloor() {
         return numberFloor;

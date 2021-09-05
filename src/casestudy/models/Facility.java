@@ -1,6 +1,7 @@
 package casestudy.models;
 
 public abstract  class Facility {
+    private String idFacility;
     private String nameService;//tên dịch vụ
     private double useArea;//diện tích
     private String roomStandard;//tiêu chuẩn phòng
@@ -12,16 +13,22 @@ public abstract  class Facility {
 
     }
 
-    public Facility(String nameService, double useArea, String roomStandard, double rentalcosts, int numberPeople, String styleRental) {
+    public Facility(String idFacility, String nameService, double useArea, String roomStandard, double rentalCosts, int numberPeople, String styleRental) {
+        this.idFacility = idFacility;
         this.nameService = nameService;
         this.useArea = useArea;
         this.roomStandard = roomStandard;
-        this.rentalCosts = rentalcosts;
+        this.rentalCosts = rentalCosts;
         this.numberPeople = numberPeople;
         this.styleRental = styleRental;
     }
 
-    public Facility(String nameService, double useArea, double rentalcosts, int numberPeople) {
+    public String getIdFacility() {
+        return idFacility;
+    }
+
+    public void setIdFacility(String idFacility) {
+        this.idFacility = idFacility;
     }
 
     public String getNameService() {

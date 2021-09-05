@@ -18,6 +18,9 @@ public class Booking {
         this.servicesType = servicesType;
     }
 
+    public Booking(int id, String startDate, String endDate, Customer customer, Facility facility) {
+    }
+
     public String getIdBooking() {
         return idBooking;
     }

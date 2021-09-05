@@ -4,7 +4,7 @@ public class Room extends Facility{
     private int numberWindow;//số cửa sổ
     private int numberBed;//số giường
     private String freeService;//dịch vụ miễn phí
-    public Room(){
+    public Room(String idFacility, String nameService, double useArea, double rentalCosts, int numberPeople, int numberWindow, int numberBed, String freeService){
 
     }
 
@@ -14,8 +14,8 @@ public class Room extends Facility{
         this.freeService = freeService;
     }
 
-    public Room(String nameService, double useArea, double rentalcosts, int numberPeople, int numberWindow, int numberBed, String freeService) {
-        super(nameService, useArea, rentalcosts, numberPeople);
+    public Room(String idFacility, String nameService, double useArea, String roomStandard, double rentalCosts, int numberPeople, String styleRental, int numberWindow, int numberBed, String freeService) {
+        super(idFacility, nameService, useArea, roomStandard, rentalCosts, numberPeople, styleRental);
         this.numberWindow = numberWindow;
         this.numberBed = numberBed;
         this.freeService = freeService;

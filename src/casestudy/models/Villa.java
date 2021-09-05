@@ -7,9 +7,6 @@ public class Villa extends Facility{
     private int bedRoomSmall;//phòng ngủ nhỏ
     private double poolArea;//diện tích hồ bơi
     private String greenSpace;//không gian xanh
-    public Villa(){
-
-    }
 
     public Villa(double livingRoomArea, int bedRoomMaster, int bedRoomSmall, double poolArea, String greenSpace) {
         this.livingRoomArea = livingRoomArea;
@@ -19,8 +16,8 @@ public class Villa extends Facility{
         this.greenSpace = greenSpace;
     }
 
-    public Villa(String nameService, double useArea, String roomStandard, double rentalcosts, int numberPeople, String styleRental, double livingRoomArea, int bedRoomMaster, int bedRoomSmall, double poolArea, String greenSpace) {
-        super(nameService, useArea, roomStandard, rentalcosts, numberPeople, styleRental);
+    public Villa(String idFacility, String nameService, double useArea, String roomStandard, double rentalCosts, int numberPeople, String styleRental, double livingRoomArea, int bedRoomMaster, int bedRoomSmall, double poolArea, String greenSpace) {
+        super(idFacility, nameService, useArea, roomStandard, rentalCosts, numberPeople, styleRental);
         this.livingRoomArea = livingRoomArea;
         this.bedRoomMaster = bedRoomMaster;
         this.bedRoomSmall = bedRoomSmall;
