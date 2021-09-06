@@ -10,22 +10,21 @@ import java.util.List;
 public class BookingComparator implements Comparator<Booking> {
     @Override
     public int compare(Booking o1, Booking o2) {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-        LocalDate starDate1 = LocalDate.parse(o1.getStartDate(), formatter);
-        LocalDate starDate2 = LocalDate.parse(o2.getStartDate(), formatter);
-        LocalDate endDate1 = LocalDate.parse(o1.getEndDate(), formatter);
-        LocalDate endDate2 = LocalDate.parse(o2.getEndDate(), formatter);
-        if (starDate1.compareTo(starDate2) > 0) {
+       DateTimeFormatter formatter =DateTimeFormatter.ofPattern("dd/MM/yyyy");
+       LocalDate startDate1 =LocalDate.parse(o1.getStartDate(),formatter);
+        LocalDate startDate2 =LocalDate.parse(o2.getStartDate(),formatter);
+        LocalDate endtDate1 =LocalDate.parse(o1.getEndDate(),formatter);
+        LocalDate endtDate2 =LocalDate.parse(o2.getEndDate(),formatter);
+        if (startDate1.compareTo(startDate2)>0){
             return 1;
-
-        } else if (starDate1.compareTo(starDate2) < 0) {
+        }else if (startDate1.compareTo(startDate2)<0){
             return -1;
-        } else {
-            if (endDate1.compareTo(endDate2) > 0) {
+        }else {
+            if (endtDate1.compareTo(endtDate2)>0){
                 return 1;
-            } else if (endDate1.compareTo(endDate2) < 0) {
+            }else if (endtDate1.compareTo(endtDate2)<0){
                 return -1;
-            } else {
+            }else {
                 return 0;
             }
         }

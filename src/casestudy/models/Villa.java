@@ -1,12 +1,15 @@
 package casestudy.models;
 
-public class Villa extends Facility{
+public class Villa extends Facility {
 
     private double livingRoomArea;//diện tích phòng khách
     private int bedRoomMaster;//phòng ngủ Master
     private int bedRoomSmall;//phòng ngủ nhỏ
     private double poolArea;//diện tích hồ bơi
     private String greenSpace;//không gian xanh
+
+    public Villa() {
+    }
 
     public Villa(double livingRoomArea, int bedRoomMaster, int bedRoomSmall, double poolArea, String greenSpace) {
         this.livingRoomArea = livingRoomArea;
@@ -67,7 +70,7 @@ public class Villa extends Facility{
 
     @Override
     public String toString() {
-        return "Villa{" +super.toString()+
+        return "Villa{" + super.toString() +
                 "livingRoomArea=" + livingRoomArea +
                 ", bedRoomMaster=" + bedRoomMaster +
                 ", bedRoomSmall=" + bedRoomSmall +

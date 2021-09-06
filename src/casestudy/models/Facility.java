@@ -63,7 +63,7 @@ public abstract  class Facility {
         this.rentalCosts = rentalCosts;
     }
 
-    public double getNumberPeople() {
+    public int getNumberPeople() {
         return numberPeople;
     }
 
@@ -82,10 +82,11 @@ public abstract  class Facility {
     @Override
     public String toString() {
         return "Facility{" +
-                "nameService='" + nameService + '\'' +
+                "idFacility=" + idFacility +
+                ", nameService='" + nameService + '\'' +
                 ", useArea=" + useArea +
                 ", roomStandard='" + roomStandard + '\'' +
-                ", rentalcosts=" + rentalCosts +
+                ", rentalCosts=" + rentalCosts +
                 ", numberPeople=" + numberPeople +
                 ", styleRental='" + styleRental + '\'' +
                 '}';

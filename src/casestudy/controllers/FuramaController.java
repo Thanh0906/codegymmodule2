@@ -1,10 +1,7 @@
 package casestudy.controllers;
 
 import casestudy.models.Facility;
-import casestudy.sevices.BookingServiceImpl;
-import casestudy.sevices.CustomerServiceImpl;
-import casestudy.sevices.EmployeeServiceImpl;
-import casestudy.sevices.FacilityServiceImpl;
+import casestudy.sevices.*;
 
 import java.util.Scanner;
 
@@ -106,6 +103,7 @@ public class FuramaController {
                         break;
                     case 4:
                         BookingServiceImpl bookingService = new BookingServiceImpl();
+                        ContactServiceImpl contactService = new ContactServiceImpl();
                         int choiceNumber4 = -1;
                         do {
                             System.out.println("1. Add new booking ");
@@ -124,8 +122,10 @@ public class FuramaController {
                                     bookingService.displayList();
                                     break;
                                 case 3:
+                                    contactService.addList();
                                     break;
                                 case 4:
+                                    contactService.displayList();
                                     break;
                                 case 5:
                                     break;

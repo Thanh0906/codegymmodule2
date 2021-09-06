@@ -5,9 +5,7 @@ public class House extends Facility {
     private int bedRoomMaster;//phòng ngủ Master
     private int bedRoomSmall;//phòng ngủ nhỏ
     private int kitchen;//phòng bếp
-    public House(String idFacility, String nameService, double useArea, double rentalCosts, int numberPeople, int numberFloor, int bedRoomMaster, int bedRoomSmall, int kitchen){
 
-    }
 
     public House(int numberFloor, int bedRoomMaster, int bedRoomSmall, int kitchen) {
         this.numberFloor = numberFloor;
@@ -58,12 +56,11 @@ public class House extends Facility {
 
     @Override
     public String toString() {
-        return "House{" +
+        return "House{" +super.toString()+
                 "numberFloor=" + numberFloor +
                 ", bedRoomMaster=" + bedRoomMaster +
                 ", bedRoomSmall=" + bedRoomSmall +
                 ", kitchen=" + kitchen +
-                super.toString()+
                 '}';
     }
 }

@@ -4,9 +4,6 @@ public class Room extends Facility{
     private int numberWindow;//số cửa sổ
     private int numberBed;//số giường
     private String freeService;//dịch vụ miễn phí
-    public Room(String idFacility, String nameService, double useArea, double rentalCosts, int numberPeople, int numberWindow, int numberBed, String freeService){
-
-    }
 
     public Room(int numberWindow, int numberBed, String freeService) {
         this.numberWindow = numberWindow;
@@ -20,6 +17,7 @@ public class Room extends Facility{
         this.numberBed = numberBed;
         this.freeService = freeService;
     }
+
 
     public int getNumberWindow() {
         return numberWindow;
@@ -47,7 +45,7 @@ public class Room extends Facility{
 
     @Override
     public String toString() {
-        return "Room{" +
+        return "Room{" +super.toString()+
                 "numberWindow=" + numberWindow +
                 ", numberBed=" + numberBed +
                 ", freeService='" + freeService + super.toString() +

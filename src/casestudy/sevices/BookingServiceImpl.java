@@ -13,40 +13,35 @@ public class BookingServiceImpl implements IBookingService {
     static Scanner scanner = new Scanner(System.in);
     static List<Customer>customerList = new ArrayList<>();
     static Map<Facility,Integer> facilityIntegerMap = new LinkedHashMap<>();
+
+
     static {
-        customerList.add(new Customer(1,"thanh",23,"male",1234564650,
-                "ngccthanh@gmail.com","vip","DN"));
-        customerList.add(new Customer(2,"huy",24,"male",1234564650,
-                "ngccthanh@gmail.com","vip","DN"));
-        customerList.add(new Customer(4,"dong",25,"male",1234564650,
-                "ngccthanh@gmail.com","vip","DN"));
-        facilityIntegerMap.put(new Villa("2","Villa 1",300,"Normal",
-        150, 10,"day",
-        50, 3, 4,
-        60, "Thoang mat"),0);
-        facilityIntegerMap.put(new Villa("1","Villa 2",400,"Vip",
-                250, 10,"day",
-                100, 5, 5,
-                100, "Thoang mat"),0);
+        customerList.add(new Customer(1,"Thanh",26,"Male",134567897,
+                "acb@gmail.com","vip","Đà nẵng"));
+        customerList.add(new Customer(2,"xuyên",24,"FeMale",16489747,
+                "acb@gmail.com","normal","Đà nẵng"));
+        facilityIntegerMap.put(new Villa("1","villa 1",500,"Vip",2000000,10,
+                "Week",100,4,4,100,"Thoáng mát"),0);
+        facilityIntegerMap.put(new Villa("2","villa 2",350,"Normal",1000000,7,
+                "Week",70,3,3,50,"Thoáng mát"),0);
     }
 
+    public Set<Booking> sendBooking(){
+        return listBooking;
+    }
     @Override
     public void addList() {
-
-        int id =1;
-        if (!listBooking.isEmpty()){
-            id=listBooking.size();
-        }
-        Customer customer = choseCustomer();
+        Customer customer = choseCustomer();//tạo đối tượng để hứng choseCustormer
         Facility facility = choseFacility();
+        System.out.println("Nhập idBokking");
+        String idBooking = scanner.nextLine();
         System.out.println("Nhập ngày bắt đầu");
         String startDate =scanner.nextLine();
         System.out.println("Nhập ngày kết thúc");
         String endDate =scanner.nextLine();
-        Booking booking = new Booking(id,startDate,endDate,customer,facility);
+        Booking booking = new Booking(idBooking,startDate,endDate,customer,facility);
         listBooking.add(booking);
         System.out.println("ddax them moi thanh cong");
-
 
     }
 
@@ -70,10 +65,9 @@ public class BookingServiceImpl implements IBookingService {
         System.out.println("nhap id khac hang");
         boolean check = true;
         int id = Integer.parseInt(scanner.nextLine());
-        while (check){
+        while (true){
             for (Customer customer :customerList){
                 if (id == customer.getId()){
-                    check = false;
                     return customer ;
                 }
             }
@@ -83,7 +77,6 @@ public class BookingServiceImpl implements IBookingService {
 
             }
         }
-        return null;
     }
     public static Facility choseFacility(){
         System.out.println("Danh sach dichj vu");
@@ -91,13 +84,13 @@ public class BookingServiceImpl implements IBookingService {
             System.out.println(entry.getKey().toString());
         }
         System.out.println("nhap id dich vu");
-        boolean check = true;
-       String id = scanner.nextLine();
-        while (check){
+         boolean check = true;
+        String id = scanner.nextLine();
+        while (true){
             for (Map.Entry<Facility,Integer>entry :facilityIntegerMap.entrySet()){
                 if (id.equals(entry.getKey().getIdFacility())){
                     check = false;
-                    return entry.getKey() ;
+                    return entry.getKey();
                 }
             }
             if (check){
@@ -106,10 +99,6 @@ public class BookingServiceImpl implements IBookingService {
 
             }
         }
-        return null;
     }
 
-    public static void main(String[] args) {
-
-    }
 }

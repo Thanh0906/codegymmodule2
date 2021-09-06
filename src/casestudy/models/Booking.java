@@ -4,21 +4,16 @@ public class Booking {
     private String idBooking; // Mã booking
     private String startDate; // Ngày bắt đầu
     private String endDate; // Ngày kết thúc
-    private String idCustomer; // Mã khách hàng
-    private String nameServices; // Tên dịch vụ
-    private String servicesType; // Loại dịch vụ
-    public Booking(){}
+    private Customer customer; // Mã khách hàng
+    private Facility facility;
+    public Booking(int id, String startDate, String endDate, Customer customer, Facility facility){}
 
-    public Booking(String idBooking, String startDate, String endDate, String idCustomer, String nameServices, String servicesType) {
+    public Booking(String idBooking, String startDate, String endDate, Customer customer, Facility facility) {
         this.idBooking = idBooking;
         this.startDate = startDate;
         this.endDate = endDate;
-        this.idCustomer = idCustomer;
-        this.nameServices = nameServices;
-        this.servicesType = servicesType;
-    }
-
-    public Booking(int id, String startDate, String endDate, Customer customer, Facility facility) {
+        this.customer = customer;
+        this.facility = facility;
     }
 
     public String getIdBooking() {
@@ -45,28 +40,20 @@ public class Booking {
         this.endDate = endDate;
     }
 
-    public String getIdCustomer() {
-        return idCustomer;
+    public Customer getCustomer() {
+        return customer;
     }
 
-    public void setIdCustomer(String idCustomer) {
-        this.idCustomer = idCustomer;
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
     }
 
-    public String getNameServices() {
-        return nameServices;
+    public Facility getFacility() {
+        return facility;
     }
 
-    public void setNameServices(String nameServices) {
-        this.nameServices = nameServices;
-    }
-
-    public String getServicesType() {
-        return servicesType;
-    }
-
-    public void setServicesType(String servicesType) {
-        this.servicesType = servicesType;
+    public void setFacility(Facility facility) {
+        this.facility = facility;
     }
 
     @Override
@@ -75,9 +62,8 @@ public class Booking {
                 "idBooking='" + idBooking + '\'' +
                 ", startDate='" + startDate + '\'' +
                 ", endDate='" + endDate + '\'' +
-                ", idCustomer='" + idCustomer + '\'' +
-                ", nameServices='" + nameServices + '\'' +
-                ", servicesType='" + servicesType + '\'' +
+                ", customer='" + customer + '\'' +
+                ", facility='" + facility + '\'' +
                 '}';
     }
 }
