@@ -7,6 +7,8 @@ import java.util.TreeMap;
 
 public class StudentManager {
     private static Map<Student, Integer> studentList = new TreeMap<>();
+
+    static Scanner scanner =new Scanner(System.in);
     static {
         studentList.put(new Student("Phước", 31, "Quảng Nam"), 1);
         studentList.put(new Student("Thanh", 26, "Quảng Ngãi"), 0);
@@ -21,7 +23,7 @@ public class StudentManager {
         System.out.print("Hãy nhập tuổi: ");
         int age = Integer.parseInt(scanner.nextLine());
         System.out.print("Hãy nhập địa chỉ: ");
-        String nameClass = scanner.nextLine();
+        String address = scanner.nextLine();
         Set<Student> studentSet = studentList.keySet();
         boolean check = false;
         for (Student student : studentSet) {
@@ -31,7 +33,7 @@ public class StudentManager {
             }
         }
         if (!check) {
-            studentList.put(new Student(name, age, nameClass), 1);
+            studentList.put(new Student(name, age, address), 1);
         }
     }
     public static void display () {
@@ -40,4 +42,5 @@ public class StudentManager {
             System.out.println(student.toString());
         }
     }
+
 }
