@@ -1,6 +1,5 @@
 package casestudy.controllers;
 
-import casestudy.models.Facility;
 import casestudy.sevices.*;
 
 import java.util.Scanner;

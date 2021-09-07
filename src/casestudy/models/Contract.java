@@ -2,6 +2,7 @@ package casestudy.models;
 
 public class Contract {
     //hợp đồng
+    private String numberContract;//số hợp đòng
     private String idBooking; // Mã booking
     private double deposit; // Số tiền cọc
     private double totalPayment; // Tổng số tiền thanh toán
@@ -11,11 +12,20 @@ public class Contract {
 
     }
 
-    public Contract(String idBooking, double deposit, double totalPayment, String idCustomer) {
+    public Contract(String numberContract, String idBooking, double deposit, double totalPayment, String idCustomer) {
+        this.numberContract = numberContract;
         this.idBooking = idBooking;
         this.deposit = deposit;
         this.totalPayment = totalPayment;
         this.idCustomer = idCustomer;
+    }
+
+    public String getNumberContract() {
+        return numberContract;
+    }
+
+    public void setNumberContract(String numberContract) {
+        this.numberContract = numberContract;
     }
 
     public String getIdBooking() {
@@ -48,5 +58,16 @@ public class Contract {
 
     public void setIdCustomer(String idCustomer) {
         this.idCustomer = idCustomer;
+    }
+
+    @Override
+    public String toString() {
+        return "Contract{" +
+                "numberContract='" + numberContract + '\'' +
+                ", idBooking='" + idBooking + '\'' +
+                ", deposit=" + deposit +
+                ", totalPayment=" + totalPayment +
+                ", idCustomer='" + idCustomer + '\'' +
+                '}';
     }
 }

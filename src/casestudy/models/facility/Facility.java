@@ -1,23 +1,20 @@
-package casestudy.models;
+package casestudy.models.facility;
 
 public abstract  class Facility {
     private String idFacility;
     private String nameService;//tên dịch vụ
-    private double useArea;//diện tích
-    private String roomStandard;//tiêu chuẩn phòng
+    private double useArea;//diện tích sử dụng
     private double rentalCosts;//chi phí cho thuê
-    private int numberPeople;//số người
-    private String styleRental;//kiêu thuê
+    private int numberPeople;//số người tối da
+    private String styleRental;//kiêu thuê bao gồm thuê theo năm, tháng, ngày, giờ.
 
-    public Facility(){
-
+    public Facility() {
     }
 
-    public Facility(String idFacility, String nameService, double useArea, String roomStandard, double rentalCosts, int numberPeople, String styleRental) {
+    public Facility(String idFacility, String nameService, double useArea, double rentalCosts, int numberPeople, String styleRental) {
         this.idFacility = idFacility;
         this.nameService = nameService;
         this.useArea = useArea;
-        this.roomStandard = roomStandard;
         this.rentalCosts = rentalCosts;
         this.numberPeople = numberPeople;
         this.styleRental = styleRental;
@@ -47,14 +44,6 @@ public abstract  class Facility {
         this.useArea = useArea;
     }
 
-    public String getRoomStandard() {
-        return roomStandard;
-    }
-
-    public void setRoomStandard(String roomStandard) {
-        this.roomStandard = roomStandard;
-    }
-
     public double getRentalCosts() {
         return rentalCosts;
     }
@@ -82,10 +71,9 @@ public abstract  class Facility {
     @Override
     public String toString() {
         return "Facility{" +
-                "idFacility=" + idFacility +
+                "idFacility='" + idFacility + '\'' +
                 ", nameService='" + nameService + '\'' +
                 ", useArea=" + useArea +
-                ", roomStandard='" + roomStandard + '\'' +
                 ", rentalCosts=" + rentalCosts +
                 ", numberPeople=" + numberPeople +
                 ", styleRental='" + styleRental + '\'' +

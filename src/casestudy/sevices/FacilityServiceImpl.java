@@ -1,9 +1,9 @@
 package casestudy.sevices;
 
-import casestudy.models.Facility;
-import casestudy.models.House;
-import casestudy.models.Room;
-import casestudy.models.Villa;
+import casestudy.models.facility.Facility;
+import casestudy.models.facility.House;
+import casestudy.models.facility.Room;
+import casestudy.models.facility.Villa;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -54,41 +54,35 @@ public class FacilityServiceImpl implements IFacilityService {
     public void editList() {
 
     }
-
+    //String idFacility, String nameService, double useArea, double rentalCosts, int numberPeople,
+    //    String styleRental, String roomStandard, double poolArea, int numberFloors
     public void addNewVilla() {
-        System.out.println("Nhập id");
+        System.out.println("Enter idFacility");
         String idFacility =scanner.nextLine();
         System.out.println("Nhập loại dịch vụ");
         String nameService = scanner.nextLine();
         System.out.println("Nhập diện tích sử dụng");
         double useArea = Double.parseDouble(scanner.nextLine());
-        System.out.println("Nhập tiêu chuẩn phonngf");
-        String roomStandard = scanner.nextLine();
         System.out.println("Nhập chi phí cho thuê");
         double rentalCosts = Double.parseDouble(scanner.nextLine());
         System.out.println("Nhập số người");
         int numberPeople = Integer.parseInt(scanner.nextLine());
         System.out.println("Nhập kiểu thuê");
         String styleRental = scanner.nextLine();
-        System.out.println("Nhập diện tích phòng");
-        double livingRoomArea = Double.parseDouble(scanner.nextLine());
-        System.out.println("Nhập số phonhf ngủ lớn");
-        int bedRoomMaster = Integer.parseInt(scanner.nextLine());
-        System.out.println("Nhập số phòng ngủ nhỏ");
-        int bedRoomSmall = Integer.parseInt(scanner.nextLine());
-        System.out.println("Nhập diện tích hồ bơi");
+        System.out.println("Nhập tiêu chuẩn phonngf");
+        String roomStandard = scanner.nextLine();
+        System.out.println("Nhập ddienj tich shoof bơi");
         double poolArea = Double.parseDouble(scanner.nextLine());
-        System.out.println("Nhập không gian xanh");
-        String greenSpace = scanner.nextLine();
-
-        Villa villa = new Villa(idFacility,nameService, useArea, roomStandard, rentalCosts,
-                numberPeople, styleRental, livingRoomArea, bedRoomMaster, bedRoomSmall, poolArea, greenSpace);
+        System.out.println("nhâp số tầng");
+        int numberFloors =Integer.parseInt(scanner.nextLine());
+        Villa villa = new Villa(idFacility,nameService,useArea,rentalCosts,numberPeople,styleRental,roomStandard,poolArea,numberFloors);
         facilityIntegerMap.put(villa, 1);
 
         System.out.println("đã thêm mới villa thành công");
 
     }
-
+//String idFacility, String nameService, double useArea, double rentalCosts, int numberPeople,
+//                 String styleRental, String roomStandard, int numberFloors
     public void addNewHouse() {
         System.out.println("Nhập lid");
         String idFacility = scanner.nextLine();
@@ -96,31 +90,18 @@ public class FacilityServiceImpl implements IFacilityService {
         String nameService = scanner.nextLine();
         System.out.println("Nhập diện tích sử dụng");
         double useArea = Double.parseDouble(scanner.nextLine());
-        System.out.println("nhap");
-        String roomStandard =scanner.nextLine();
         System.out.println("Nhập chi phí cho thuê");
         double rentalCosts = Double.parseDouble(scanner.nextLine());
         System.out.println("Nhập số người");
         int numberPeople = Integer.parseInt(scanner.nextLine());
         System.out.println("nhap kiểu thuê");
         String styleRental =scanner.nextLine();
+        System.out.println("nhap tiêu chuẩn phòng");
+        String roomStandard =scanner.nextLine();
         System.out.println("nhâp số tầng");
         int numberFloor = Integer.parseInt(scanner.nextLine());
-        System.out.println("nhâp số phòng ngủ lớn");
-        int bedRoomMaster = Integer.parseInt(scanner.nextLine());
-        System.out.println("nhâp số phòng ngủ nhỏ");
-        int bedRoomSmall = Integer.parseInt(scanner.nextLine());
-        System.out.println("nhâp số phòng bếp");
-        int kitchen = Integer.parseInt(scanner.nextLine());
-// super(idFacility, nameService, useArea, roomStandard, rentalCosts, numberPeople, styleRental);
-//        this.numberFloor = numberFloor;
-//        this.bedRoomMaster = bedRoomMaster;
-//        this.bedRoomSmall = bedRoomSmall;
-//        this.kitchen = kitchen;
-        House house = new House(idFacility,nameService,useArea,roomStandard,rentalCosts,
-                numberPeople,styleRental,numberFloor,bedRoomMaster,bedRoomSmall,kitchen);
+        House house = new House(idFacility,nameService,useArea,rentalCosts,numberPeople,styleRental,roomStandard,numberFloor);
         facilityIntegerMap.put(house, 1);
-
         System.out.println("đã thêm mới villa thành công");
 
     }
@@ -132,21 +113,17 @@ public class FacilityServiceImpl implements IFacilityService {
         String nameService = scanner.nextLine();
         System.out.println("Nhập diện tích sử dụng");
         double useArea = Double.parseDouble(scanner.nextLine());
-        System.out.println("nhap");
-        String roomStandard =scanner.nextLine();
         System.out.println("Nhập chi phí cho thuê");
         double rentalCosts = Double.parseDouble(scanner.nextLine());
         System.out.println("Nhập số người");
         int numberPeople = Integer.parseInt(scanner.nextLine());
         System.out.println("nhap kiểu thuê");
         String styleRental =scanner.nextLine();
-        System.out.println("Nhập số của sổ của phòng");
-        int numberWindow = Integer.parseInt(scanner.nextLine());
-        System.out.println("Nhập số giường ngủ");
-        int numberBed = Integer.parseInt(scanner.nextLine());
         System.out.println("Nhập dịch vụ miễn phí");
         String freeService = scanner.nextLine();
-        Room room = new Room(idFacility,nameService,useArea,roomStandard,rentalCosts,numberPeople,styleRental,numberWindow,numberBed,freeService);
+        //String idFacility, String nameService, double useArea, double rentalCosts, int numberPeople,
+        //                String styleRental, String freeService
+        Room room = new Room(idFacility,nameService,useArea,rentalCosts,numberPeople,styleRental,freeService);
 
         facilityIntegerMap.put(room, 0);
 

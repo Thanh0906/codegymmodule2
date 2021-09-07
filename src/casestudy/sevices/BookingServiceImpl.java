@@ -1,9 +1,9 @@
 package casestudy.sevices;
 
 import casestudy.models.Booking;
-import casestudy.models.Customer;
-import casestudy.models.Facility;
-import casestudy.models.Villa;
+import casestudy.models.person.Customer;
+import casestudy.models.facility.Facility;
+import casestudy.models.facility.Villa;
 import casestudy.utils.BookingComparator;
 
 import java.util.*;
@@ -15,16 +15,16 @@ public class BookingServiceImpl implements IBookingService {
     static Map<Facility,Integer> facilityIntegerMap = new LinkedHashMap<>();
 
 
-    static {
-        customerList.add(new Customer(1,"Thanh",26,"Male",134567897,
-                "acb@gmail.com","vip","Đà nẵng"));
-        customerList.add(new Customer(2,"xuyên",24,"FeMale",16489747,
-                "acb@gmail.com","normal","Đà nẵng"));
-        facilityIntegerMap.put(new Villa("1","villa 1",500,"Vip",2000000,10,
-                "Week",100,4,4,100,"Thoáng mát"),0);
-        facilityIntegerMap.put(new Villa("2","villa 2",350,"Normal",1000000,7,
-                "Week",70,3,3,50,"Thoáng mát"),0);
-    }
+    //static {
+    //        customerList.add(new Customer(1,"Thanh",26,"Male",134567897,
+    //                "acb@gmail.com","vip","Đà nẵng"));
+    //        customerList.add(new Customer(2,"xuyên",24,"FeMale",16489747,
+    //                "acb@gmail.com","normal","Đà nẵng"));
+    //        facilityIntegerMap.put(new Villa("1","villa 1",500,"Vip",2000000,10,
+    //                "Week",100,4,4,100,"Thoáng mát"),0);
+    //        facilityIntegerMap.put(new Villa("2","villa 2",350,"Normal",1000000,7,
+    //                "Week",70,3,3,50,"Thoáng mát"),0);
+    //    }
 
     public Set<Booking> sendBooking(){
         return listBooking;
@@ -39,8 +39,8 @@ public class BookingServiceImpl implements IBookingService {
         String startDate =scanner.nextLine();
         System.out.println("Nhập ngày kết thúc");
         String endDate =scanner.nextLine();
-        Booking booking = new Booking(idBooking,startDate,endDate,customer,facility);
-        listBooking.add(booking);
+     //   Booking booking = new Booking(idBooking,startDate,endDate,customer,facility);
+   //     listBooking.add(booking);
         System.out.println("ddax them moi thanh cong");
 
     }

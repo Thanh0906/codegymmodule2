@@ -17,14 +17,13 @@ public class StudentManager {
 
     }
     public static void add () {
-        Scanner scanner = new Scanner(System.in);
         System.out.print("Hãy nhập tên: ");
         String name = scanner.nextLine();
         System.out.print("Hãy nhập tuổi: ");
         int age = Integer.parseInt(scanner.nextLine());
         System.out.print("Hãy nhập địa chỉ: ");
         String address = scanner.nextLine();
-        Set<Student> studentSet = studentList.keySet();
+        Set<Student> studentSet = studentList.keySet();//treemap ko thể duyệt for nên chuyển sang set để duyệt
         boolean check = false;
         for (Student student : studentSet) {
             if (name.equals(student.getName())) {

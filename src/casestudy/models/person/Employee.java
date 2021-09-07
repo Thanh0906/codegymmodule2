@@ -1,16 +1,24 @@
-package casestudy.models;
+package casestudy.models.person;
 
-public class Employee extends Person{
-    private String level;//chức vụ
-    private String position;//vị trí
+import casestudy.models.person.Person;
+
+public class Employee extends Person {
+    //nhân viên
+    private String level;//trihf độ Trung cấp, Cao đẳng, Đại học và sau đại học
+    private String position;//vị trí Lễ tân, phục vụ, chuyên viên, giám sát, quản lý, giám đốc.
     private int salary;//luong
 
     public Employee() {
     }
 
+    public Employee(String level, String position, int salary) {
+        this.level = level;
+        this.position = position;
+        this.salary = salary;
+    }
 
-    public Employee(int id, String name, int age, String sex, int idCard, String email, String level, String position, int salary) {
-        super(id, name, age, sex, idCard, email);
+    public Employee(int id, String fullName, int age, String gender, String idCardNumber, String phoneNumber, String email, String level, String position, int salary) {
+        super(id, fullName, age, gender, idCardNumber, phoneNumber, email);
         this.level = level;
         this.position = position;
         this.salary = salary;
@@ -43,7 +51,6 @@ public class Employee extends Person{
     @Override
     public String toString() {
         return "Employee{" +
-                super.toString()+
                 "level='" + level + '\'' +
                 ", position='" + position + '\'' +
                 ", salary=" + salary +

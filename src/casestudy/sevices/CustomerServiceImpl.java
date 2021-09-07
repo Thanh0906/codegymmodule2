@@ -1,6 +1,6 @@
 package casestudy.sevices;
 
-import casestudy.models.Customer;
+import casestudy.models.person.Customer;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -10,28 +10,30 @@ public class CustomerServiceImpl implements ICustomerService {
     static Scanner scanner = new Scanner(System.in);
     List<Customer> customerList  = new LinkedList<>();
 
-
-
     @Override
     public void addList() {
         System.out.println("nhập id :");
         int id = Integer.parseInt(scanner.nextLine());
         System.out.println("nhập tên :");
-        String name = scanner.nextLine();
+        String fullName = scanner.nextLine();
         System.out.println("nhập id :");
         int age = Integer.parseInt(scanner.nextLine());
         System.out.println("nhập giới tính :");
-        String sex = scanner.nextLine();
+        String gender = scanner.nextLine();
         System.out.println("nhập chứng minh nhân dân :");
-        int idCard = Integer.parseInt(scanner.nextLine());
+        String idCardNumber =scanner.nextLine();
+        System.out.println("nhập số điện thoại");
+        String phoneNumber =scanner.nextLine();
         System.out.println("nhập Email :");
         String email = scanner.nextLine();
+        System.out.println("nhập id khách hàng");
+        String idCustomer =scanner.nextLine();
         System.out.println("nhập Loại khách hàng:");
-        String typeCustomer = scanner.nextLine();
+        String customerType = scanner.nextLine();
         System.out.println("nhập vị trí :");
         String addressCustomer = scanner.nextLine();
 
-        Customer customer = new Customer(id, name, age, sex, idCard, email,typeCustomer,addressCustomer);
+        Customer customer = new Customer(id,fullName,age,gender,idCardNumber,phoneNumber,email,idCustomer,customerType,addressCustomer);
         customerList.add(customer);
         System.out.println("dã thêm mới thành công");
 
@@ -68,7 +70,7 @@ public class CustomerServiceImpl implements ICustomerService {
                     case 1:
                         System.out.print("Nhập lại tên: ");
                         String inputNewName = scanner.nextLine();
-                        customerList.get(i).setName(inputNewName);
+                        customerList.get(i).setFullName(inputNewName);
                         break;
                     case 2:
                         System.out.print("Nhập lại tuổi");
@@ -78,12 +80,12 @@ public class CustomerServiceImpl implements ICustomerService {
                     case 3:
                         System.out.print("Nhập lại giới tính: ");
                         String inputNewSex = scanner.nextLine();
-                        customerList.get(i).setSex(inputNewSex);
+                        customerList.get(i).setGender(inputNewSex);
                         break;
                     case 4:
                         System.out.print("Nhập lại số CMND ");
-                        int inputNewId = Integer.parseInt(scanner.nextLine());
-                        customerList.get(i).setIdCard(inputNewId);
+                        String inputNewId = scanner.nextLine();
+                        customerList.get(i).setIdCardNumber(inputNewId);
                         break;
                     case 5:
                         System.out.print("Nhập lại email ");
@@ -93,7 +95,7 @@ public class CustomerServiceImpl implements ICustomerService {
                     case 6:
                         System.out.print("Nhập lại loại khách hàng ");
                         String inputNewTypeCustomer = scanner.nextLine();
-                        customerList.get(i).setTypeCustomer(inputNewTypeCustomer);
+                        customerList.get(i).setCustomerType(inputNewTypeCustomer);
                         break;
                     case 7:
                         System.out.print("Nhập lại địa chỉ khách hàng: ");

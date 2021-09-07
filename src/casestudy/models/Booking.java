@@ -1,19 +1,25 @@
 package casestudy.models;
 
-public class Booking {
+import casestudy.models.person.Customer;
+
+public class Booking implements Comparable<Booking> {
     private String idBooking; // Mã booking
     private String startDate; // Ngày bắt đầu
     private String endDate; // Ngày kết thúc
     private Customer customer; // Mã khách hàng
-    private Facility facility;
-    public Booking(int id, String startDate, String endDate, Customer customer, Facility facility){}
+    private String nameService; // Tên dịch vụ
+    private String idService; // Mã dịch vụ
 
-    public Booking(String idBooking, String startDate, String endDate, Customer customer, Facility facility) {
+    public Booking() {
+    }
+
+    public Booking(String idBooking, String startDate, String endDate, Customer customer, String nameService, String idService) {
         this.idBooking = idBooking;
         this.startDate = startDate;
         this.endDate = endDate;
         this.customer = customer;
-        this.facility = facility;
+        this.nameService = nameService;
+        this.idService = idService;
     }
 
     public String getIdBooking() {
@@ -48,22 +54,24 @@ public class Booking {
         this.customer = customer;
     }
 
-    public Facility getFacility() {
-        return facility;
+    public String getNameService() {
+        return nameService;
     }
 
-    public void setFacility(Facility facility) {
-        this.facility = facility;
+    public void setNameService(String nameService) {
+        this.nameService = nameService;
+    }
+
+    public String getIdService() {
+        return idService;
+    }
+
+    public void setIdService(String idService) {
+        this.idService = idService;
     }
 
     @Override
-    public String toString() {
-        return "Booking{" +
-                "idBooking='" + idBooking + '\'' +
-                ", startDate='" + startDate + '\'' +
-                ", endDate='" + endDate + '\'' +
-                ", customer='" + customer + '\'' +
-                ", facility='" + facility + '\'' +
-                '}';
+    public int compareTo(Booking o) {
+        return 0;
     }
 }

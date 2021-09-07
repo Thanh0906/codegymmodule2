@@ -2,16 +2,13 @@ package casestudy.sevices;
 
 import casestudy.models.Booking;
 import casestudy.models.Contract;
-import casestudy.models.Customer;
+import casestudy.models.person.Customer;
 
 import java.util.*;
 
 public class ContactServiceImpl implements IContactService {
     static List<Contract> contractList = new ArrayList<>();
-
     static Scanner scanner = new Scanner(System.in);
-
-
     @Override
     public void addList() {
         Queue<Booking> bookingQueue = new LinkedList<>();
@@ -20,12 +17,13 @@ public class ContactServiceImpl implements IContactService {
             bookingQueue.add(booking);
         }
         while (!bookingQueue.isEmpty()) {
-
             Booking booking = bookingQueue.poll();
             Customer customer = booking.getCustomer();
-            System.out.println("đang tạo hop dong cho Booking cso thông tin " + booking.toString());
+            System.out.println("đang tạo hop dong cho Booking có thông tin " + booking.toString());
             System.out.println("đang tạo hop dong cho khach hang co thông tin " + customer.toString());
-            System.out.println("nhập id hợp đồng");
+            System.out.println("nhập số hợp đồng");
+            String numberContract = scanner.nextLine();
+            System.out.println("nhập mã booking ");
             String idBooking = scanner.nextLine();
             System.out.println("nhập số tiền trả trước");
             double deposit = Double.parseDouble(scanner.nextLine());
@@ -33,10 +31,9 @@ public class ContactServiceImpl implements IContactService {
             double totalPayment = Double.parseDouble(scanner.nextLine());
             System.out.println("nhập số idcustomer");
             String idCustomer = scanner.nextLine();
-            Contract contract = new Contract(idBooking, deposit, totalPayment, idCustomer);
+            Contract contract = new Contract(numberContract,idBooking,deposit,totalPayment,idCustomer);
             contractList.add(contract);
             System.out.println("đã tạo hợp đồng thành công");
-
         }
     }
 
