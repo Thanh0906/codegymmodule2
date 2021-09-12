@@ -20,8 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a336e10d-0c4b-468b-810f-a7f82f221558" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/ss17_io_binary_file_serialization/bai_tap/copy_file_nhi_phan/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss17_io_binary_file_serialization/bai_tap/copy_file_nhi_phan/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss17_io_binary_file_serialization/bai_tap/copy_file_nhi_phan/source.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss17_io_binary_file_serialization/bai_tap/copy_file_nhi_phan/source.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss16_io_text_file/thuc_hanh/Text.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss16_io_text_file/thuc_hanh/readUseFileInputStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss19_string_regex/bai_tap/crawl_tin_thuc/CrawlNews.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss19_string_regex/bai_tap/validate_so_dien_thoai/NumberPhone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss19_string_regex/bai_tap/validate_so_dien_thoai/NumberPhoneTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss19_string_regex/bai_tap/validate_ten_cua_lop_hoc/ClassExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss19_string_regex/bai_tap/validate_ten_cua_lop_hoc/ClassExampleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss19_string_regex/thuc_hanh/crawl_danh_sach_bai_hat/CrawlSongExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss19_string_regex/thuc_hanh/validate_account/AccountExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss19_string_regex/thuc_hanh/validate_account/AccountExampleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss19_string_regex/thuc_hanh/validate_email/EmailExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss19_string_regex/thuc_hanh/validate_email/EmailExampleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/codegymmodule2/ss17_io_binary_file_serialization/bai_tap/copy_file_nhi_phan/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/codegymmodule2/ss17_io_binary_file_serialization/bai_tap/copy_file_nhi_phan/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/codegymmodule2/ss17_io_binary_file_serialization/bai_tap/copy_file_nhi_phan/target.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/codegymmodule2/ss17_io_binary_file_serialization/bai_tap/copy_file_nhi_phan/target.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,13 +82,13 @@
       <recent name="C:\Users\ADMIN\Desktop\codegymmodule2\src\ss16_io_text_file\thuc_hanh\tinh_tong_cac_so_trong_file_text" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
-    <configuration name="CopyFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss16_io_text_file.bai_tap.sao_chep_van_ban.CopyFile" />
+  <component name="RunManager" selected="Application.CrawlNews">
+    <configuration name="AccountExampleTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss19_string_regex.thuc_hanh.validate_account.AccountExampleTest" />
       <module name="codegymmodule2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss16_io_text_file.bai_tap.sao_chep_van_ban.*" />
+          <option name="PATTERN" value="ss19_string_regex.thuc_hanh.validate_account.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -83,12 +96,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss17_io_binary_file_serialization.bai_tap.copy_file_nhi_phan.Main" />
+    <configuration name="ClassExampleTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss19_string_regex.bai_tap.validate_ten_cua_lop_hoc.ClassExampleTest" />
       <module name="codegymmodule2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss17_io_binary_file_serialization.bai_tap.copy_file_nhi_phan.*" />
+          <option name="PATTERN" value="ss19_string_regex.bai_tap.validate_ten_cua_lop_hoc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -96,12 +109,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss17_io_binary_file_serialization.bai_tap.quan_li_san_pham_lu_ra_file_nhi_phan.Main" />
+    <configuration name="CrawlNews" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss19_string_regex.bai_tap.crawl_tin_thuc.CrawlNews" />
       <module name="codegymmodule2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss17_io_binary_file_serialization.bai_tap.quan_li_san_pham_lu_ra_file_nhi_phan.*" />
+          <option name="PATTERN" value="ss19_string_regex.bai_tap.crawl_tin_thuc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,12 +122,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss16_io_text_file.bai_tap.doc_tep_csv.Main" />
+    <configuration name="CrawlSongExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss19_string_regex.thuc_hanh.crawl_danh_sach_bai_hat.CrawlSongExample" />
       <module name="codegymmodule2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss16_io_text_file.bai_tap.doc_tep_csv.*" />
+          <option name="PATTERN" value="ss19_string_regex.thuc_hanh.crawl_danh_sach_bai_hat.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -122,12 +135,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss17_io_binary_file_serialization.bai_tap.quan_li_san_pham_lu_ra_file_nhi_phan.ProductManager" />
+    <configuration name="EmailExampleTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss19_string_regex.thuc_hanh.validate_email.EmailExampleTest" />
       <module name="codegymmodule2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss17_io_binary_file_serialization.bai_tap.quan_li_san_pham_lu_ra_file_nhi_phan.*" />
+          <option name="PATTERN" value="ss19_string_regex.thuc_hanh.validate_email.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -137,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Main (3)" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.CopyFile" />
-        <item itemvalue="Application.ProductManager" />
+        <item itemvalue="Application.CrawlNews" />
+        <item itemvalue="Application.ClassExampleTest" />
+        <item itemvalue="Application.CrawlSongExample" />
+        <item itemvalue="Application.AccountExampleTest" />
+        <item itemvalue="Application.EmailExampleTest" />
       </list>
     </recent_temporary>
   </component>
@@ -159,7 +172,7 @@
       <workItem from="1631330414003" duration="5399000" />
       <workItem from="1631353205174" duration="7109000" />
       <workItem from="1631371855457" duration="4666000" />
-      <workItem from="1631411737837" duration="4319000" />
+      <workItem from="1631411737837" duration="8342000" />
     </task>
     <servers />
   </component>
@@ -202,22 +215,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="168" y="120" width="1200" height="584" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1631359633227" />
-    <state width="1342" height="195" key="GridCell.Tab.0.bottom" timestamp="1631415422016">
+    <state width="1342" height="195" key="GridCell.Tab.0.bottom" timestamp="1631419228494">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1342" height="195" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1631415422016" />
-    <state width="1342" height="195" key="GridCell.Tab.0.center" timestamp="1631415422016">
+    <state width="1342" height="195" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1631419228494" />
+    <state width="1342" height="195" key="GridCell.Tab.0.center" timestamp="1631419228494">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1342" height="195" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1631415422016" />
-    <state width="1342" height="195" key="GridCell.Tab.0.left" timestamp="1631415422016">
+    <state width="1342" height="195" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1631419228494" />
+    <state width="1342" height="195" key="GridCell.Tab.0.left" timestamp="1631419228494">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1342" height="195" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1631415422016" />
-    <state width="1342" height="195" key="GridCell.Tab.0.right" timestamp="1631415422016">
+    <state width="1342" height="195" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1631419228494" />
+    <state width="1342" height="195" key="GridCell.Tab.0.right" timestamp="1631419228494">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1342" height="195" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1631415422016" />
+    <state width="1342" height="195" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1631419228494" />
     <state width="1342" height="242" key="GridCell.Tab.1.bottom" timestamp="1631377810613">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -246,10 +259,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="349" y="67" key="editAsTableFormatDialogDimension/0.0.1536.824@0.0.1536.824" timestamp="1631359512184" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1631355164442">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1631419577143">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1631355164442" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1631419577143" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
