@@ -17,7 +17,10 @@ public class Main {
             while ((length = inputStream.read(buffer)) > 0) {
                 outputStream.write(buffer, 0, length);
             }
-        } finally {
+        } catch (Exception e){
+            System.err.println("Tệp nguồn không tồn tại hoặc tập tin đích đã tồn tại. ");
+        }
+        finally {
             if (inputStream != null) {
                 inputStream.close();
             }
@@ -28,9 +31,9 @@ public class Main {
     }
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
-        System.out.println("nhập đường truyền vào");
+        System.out.println("nhập đường truyền vào");//src\ss17_io_binary_file_serialization\bai_tap\copy_file_nhi_phan\source.txt
         String  source = scanner.nextLine();
-        System.out.println("nhập đường ra");
+        System.out.println("nhập đường ra");//src\ss17_io_binary_file_serialization\bai_tap\copy_file_nhi_phan\target.txt
         String target = scanner.nextLine();
         File sourceFile = new File(source);
         File targetFile = new File(target);
