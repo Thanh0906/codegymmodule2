@@ -26,7 +26,7 @@ public class ReadAndWriteFile {
             return productList;
         }
     }
-    public static void writeToFile(String filePath, List<Product> productList) {
+    public static void writeToFile(String filePath, List<Product> productList, boolean b) {
         try {
             FileOutputStream fileOutputStream = new FileOutputStream(filePath);
             ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);

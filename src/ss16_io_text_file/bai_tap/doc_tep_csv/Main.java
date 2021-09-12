@@ -8,10 +8,11 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        BufferedReader bufferedReader = null;
+        String readFilePath ="C:\\Users\\ADMIN\\Desktop\\codegymmodule2\\src\\ss16_io_text_file\\bai_tap\\doc_tep_csv\\contry.csv";
+                BufferedReader bufferedReader = null;
         try {
             String line;
-            bufferedReader = new BufferedReader(new FileReader("C:\\Users\\ADMIN\\Desktop\\codegymmodule2\\src\\ss16_io_text_file\\bai_tap\\doc_tep_csv\\contry.csv"));
+            bufferedReader = new BufferedReader(new FileReader(readFilePath));
 
             while ((line = bufferedReader.readLine()) != null) {
                 printCountry(parseCsvLine(line));

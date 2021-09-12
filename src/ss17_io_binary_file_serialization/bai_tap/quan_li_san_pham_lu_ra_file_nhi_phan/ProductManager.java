@@ -32,7 +32,7 @@ public class ProductManager {
             String other = scanner.nextLine();
             listProduct.add(new Product(idProduct, name, producer, priceOfProduct, other));
             System.out.println("Thêm sản phẩm thành công");
-            ReadAndWriteFile.writeToFile(filePath, listProduct);
+            ReadAndWriteFile.writeToFile(filePath, listProduct,true);
             displayList();
         }
     }

@@ -25,6 +25,8 @@ public class Main {
                 case 3:
                     ProductManager.search();
                     break;
+                default:
+                    System.out.println("bạn nhập sai.mời nhập lại");
             }
 
         }

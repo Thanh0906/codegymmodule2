@@ -20,38 +20,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a336e10d-0c4b-468b-810f-a7f82f221558" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ss16_io_text_file/bai_tap/doc_tep_csv/Country.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss16_io_text_file/bai_tap/doc_tep_csv/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss16_io_text_file/bai_tap/doc_tep_csv/contry.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss16_io_text_file/bai_tap/sao_chep_van_ban/CopyFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss16_io_text_file/bai_tap/sao_chep_van_ban/number.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss16_io_text_file/bai_tap/sao_chep_van_ban/result.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss16_io_text_file/thuc_hanh/tim_gia_tri_lon_nhat_va_ghi_ra_tep/FindMaxValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss16_io_text_file/thuc_hanh/tim_gia_tri_lon_nhat_va_ghi_ra_tep/ReadAndWriteFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss16_io_text_file/thuc_hanh/tim_gia_tri_lon_nhat_va_ghi_ra_tep/numbers.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss16_io_text_file/thuc_hanh/tinh_tong_cac_so_trong_file_text/ReadFileExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss16_io_text_file/thuc_hanh/tinh_tong_cac_so_trong_file_text/ReadFileText.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss16_io_text_file/thuc_hanh/tinh_tong_cac_so_trong_file_text/text.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss17_io_binary_file_serialization/bai_tap/copy_file_nhi_phan/CopyFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss17_io_binary_file_serialization/bai_tap/quan_li_san_pham_lu_ra_file_nhi_phan/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss17_io_binary_file_serialization/bai_tap/quan_li_san_pham_lu_ra_file_nhi_phan/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss17_io_binary_file_serialization/bai_tap/quan_li_san_pham_lu_ra_file_nhi_phan/ProductManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss17_io_binary_file_serialization/bai_tap/quan_li_san_pham_lu_ra_file_nhi_phan/ReadAndWriteFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss17_io_binary_file_serialization/bai_tap/quan_li_san_pham_lu_ra_file_nhi_phan/product.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss17_io_binary_file_serialization/thuc_tap/doc_va_ghi_danh_sach_sinh_vien_ra_tep_nhi_phan/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss17_io_binary_file_serialization/thuc_tap/doc_va_ghi_danh_sach_sinh_vien_ra_tep_nhi_phan/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss17_io_binary_file_serialization/thuc_tap/sao_chep_cac_tap_tin_co_dung_luong_lon/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss17_io_binary_file_serialization/thuc_tap/sao_chep_cac_tap_tin_co_dung_luong_lon/copy.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss17_io_binary_file_serialization/thuc_tap/sao_chep_cac_tap_tin_co_dung_luong_lon/text.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss8_clean_code_refactoring/bai_tap/refactoring/Parameterized.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codegymmodule2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/codegymmodule2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codegymmodule2/ss15_xu_li_ngoai_le_va_debug/bai_tap/sd_lop_illegaltriangleexception/Triangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/codegymmodule2/ss15_xu_li_ngoai_le_va_debug/bai_tap/sd_lop_illegaltriangleexception/Triangle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codegymmodule2/ss8_clean_code_refactoring/bai_tap/refactoring/TennisGameTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codegymmodule2/ss8_clean_code_refactoring/thuc_hanh/tach_bien/FizzBuzzTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss15_xu_li_ngoai_le_va_debug/bai_tap/sd_lop_illegaltriangleexception/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss15_xu_li_ngoai_le_va_debug/bai_tap/sd_lop_illegaltriangleexception/Triangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss8_clean_code_refactoring/bai_tap/refactoring/TennisGameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss8_clean_code_refactoring/bai_tap/refactoring/TennisGameTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss8_clean_code_refactoring/thuc_hanh/tach_bien/FizzBuzzTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss8_clean_code_refactoring/thuc_hanh/tach_bien/FizzBuzzTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/demo_product_manager/controller/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/demo_product_manager/data/product.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/demo_product_manager/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/demo_product_manager/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/demo_product_manager/service/ProductServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/demo_product_manager/util/ReadWirteCSV.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss17_io_binary_file_serialization/bai_tap/copy_file_nhi_phan/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss17_io_binary_file_serialization/bai_tap/copy_file_nhi_phan/source.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss17_io_binary_file_serialization/bai_tap/copy_file_nhi_phan/target.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/codegymmodule2/ss16_io_text_file/bai_tap/doc_tep_csv/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/codegymmodule2/ss16_io_text_file/bai_tap/doc_tep_csv/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/codegymmodule2/ss16_io_text_file/bai_tap/sao_chep_van_ban/result.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/codegymmodule2/ss16_io_text_file/bai_tap/sao_chep_van_ban/result.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/codegymmodule2/ss17_io_binary_file_serialization/bai_tap/quan_li_san_pham_lu_ra_file_nhi_phan/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/codegymmodule2/ss17_io_binary_file_serialization/bai_tap/quan_li_san_pham_lu_ra_file_nhi_phan/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/codegymmodule2/ss17_io_binary_file_serialization/bai_tap/quan_li_san_pham_lu_ra_file_nhi_phan/ProductManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/codegymmodule2/ss17_io_binary_file_serialization/bai_tap/quan_li_san_pham_lu_ra_file_nhi_phan/ProductManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/codegymmodule2/ss17_io_binary_file_serialization/bai_tap/quan_li_san_pham_lu_ra_file_nhi_phan/ReadAndWriteFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/codegymmodule2/ss17_io_binary_file_serialization/bai_tap/quan_li_san_pham_lu_ra_file_nhi_phan/ReadAndWriteFile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss16_io_text_file/bai_tap/doc_tep_csv/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss16_io_text_file/bai_tap/doc_tep_csv/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss16_io_text_file/bai_tap/sao_chep_van_ban/result.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss16_io_text_file/bai_tap/sao_chep_van_ban/result.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss17_io_binary_file_serialization/bai_tap/copy_file_nhi_phan/CopyFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss17_io_binary_file_serialization/bai_tap/quan_li_san_pham_lu_ra_file_nhi_phan/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss17_io_binary_file_serialization/bai_tap/quan_li_san_pham_lu_ra_file_nhi_phan/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss17_io_binary_file_serialization/bai_tap/quan_li_san_pham_lu_ra_file_nhi_phan/ProductManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss17_io_binary_file_serialization/bai_tap/quan_li_san_pham_lu_ra_file_nhi_phan/ProductManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss17_io_binary_file_serialization/bai_tap/quan_li_san_pham_lu_ra_file_nhi_phan/ReadAndWriteFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss17_io_binary_file_serialization/bai_tap/quan_li_san_pham_lu_ra_file_nhi_phan/ReadAndWriteFile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +66,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -98,13 +88,13 @@
       <recent name="C:\Users\ADMIN\Desktop\codegymmodule2\src\ss16_io_text_file\thuc_hanh\tinh_tong_cac_so_trong_file_text" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (3)">
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss17_io_binary_file_serialization.thuc_tap.sao_chep_cac_tap_tin_co_dung_luong_lon.Main" />
+  <component name="RunManager" selected="Application.Main (1)">
+    <configuration name="CopyFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss16_io_text_file.bai_tap.sao_chep_van_ban.CopyFile" />
       <module name="codegymmodule2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss17_io_binary_file_serialization.thuc_tap.sao_chep_cac_tap_tin_co_dung_luong_lon.*" />
+          <option name="PATTERN" value="ss16_io_text_file.bai_tap.sao_chep_van_ban.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -112,12 +102,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss17_io_binary_file_serialization.thuc_tap.doc_va_ghi_danh_sach_sinh_vien_ra_tep_nhi_phan.Main" />
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss17_io_binary_file_serialization.bai_tap.copy_file_nhi_phan.Main" />
       <module name="codegymmodule2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss17_io_binary_file_serialization.thuc_tap.doc_va_ghi_danh_sach_sinh_vien_ra_tep_nhi_phan.*" />
+          <option name="PATTERN" value="ss17_io_binary_file_serialization.bai_tap.copy_file_nhi_phan.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -166,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (3)" />
-        <item itemvalue="Application.ProductManager" />
-        <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.CopyFile" />
+        <item itemvalue="Application.ProductManager" />
       </list>
     </recent_temporary>
   </component>
@@ -187,6 +177,8 @@
       <workItem from="1631265245513" duration="3992000" />
       <workItem from="1631330414003" duration="5399000" />
       <workItem from="1631353205174" duration="7109000" />
+      <workItem from="1631371855457" duration="4666000" />
+      <workItem from="1631411737837" duration="3691000" />
     </task>
     <servers />
   </component>
@@ -205,6 +197,9 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="538" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1631334021196">
       <screen x="0" y="0" width="1536" height="824" />
@@ -218,30 +213,46 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="314" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1631355517180" />
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1631359132564">
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1631414594138">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1631359132564" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1631414594138" />
     <state x="168" y="120" width="1200" height="584" key="DiffContextDialog" timestamp="1631359633227">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="168" y="120" width="1200" height="584" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1631359633227" />
-    <state width="1342" height="195" key="GridCell.Tab.0.bottom" timestamp="1631360388145">
+    <state width="1342" height="195" key="GridCell.Tab.0.bottom" timestamp="1631414523544">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1342" height="195" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1631360388145" />
-    <state width="1342" height="195" key="GridCell.Tab.0.center" timestamp="1631360388145">
+    <state width="1342" height="195" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1631414523544" />
+    <state width="1342" height="195" key="GridCell.Tab.0.center" timestamp="1631414523544">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1342" height="195" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1631360388145" />
-    <state width="1342" height="195" key="GridCell.Tab.0.left" timestamp="1631360388145">
+    <state width="1342" height="195" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1631414523544" />
+    <state width="1342" height="195" key="GridCell.Tab.0.left" timestamp="1631414523544">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1342" height="195" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1631360388145" />
-    <state width="1342" height="195" key="GridCell.Tab.0.right" timestamp="1631360388145">
+    <state width="1342" height="195" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1631414523544" />
+    <state width="1342" height="195" key="GridCell.Tab.0.right" timestamp="1631414523544">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1342" height="195" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1631360388145" />
+    <state width="1342" height="195" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1631414523544" />
+    <state width="1342" height="242" key="GridCell.Tab.1.bottom" timestamp="1631377810613">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1342" height="242" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1631377810613" />
+    <state width="1342" height="242" key="GridCell.Tab.1.center" timestamp="1631377810613">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1342" height="242" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1631377810613" />
+    <state width="1342" height="242" key="GridCell.Tab.1.left" timestamp="1631377810613">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1342" height="242" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1631377810613" />
+    <state width="1342" height="242" key="GridCell.Tab.1.right" timestamp="1631377810613">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1342" height="242" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1631377810613" />
     <state x="490" y="157" width="540" height="524" key="StructurePopup" timestamp="1631359535661">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -269,11 +280,6 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ss17_io_binary_file_serialization/bai_tap/quan_li_san_pham_lu_ra_file_nhi_phan/ReadAndWriteFile.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
