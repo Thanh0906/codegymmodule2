@@ -27,6 +27,7 @@ public class CrawlNews {
             while (m.find()) {
                 System.out.println(m.group(1));
             }
+            
         } catch (IOException exception) {
             exception.printStackTrace();
         }

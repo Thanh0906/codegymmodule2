@@ -1,9 +1,8 @@
 package casestudy.models.person;
 
 public abstract class Person {
-    private int id;
     private String fullName; // Họ tên
-    private int age; // Ngày sinh
+    private String birthday; // Ngày sinh
     private String gender; // Giới tính
     private String idCardNumber; // Số CMND
     private String phoneNumber; // Số điện thoại
@@ -12,24 +11,16 @@ public abstract class Person {
     public Person() {
 
     }
+    public Person( String fullName, String birthday, String gender, String idCardNumber, String phoneNumber, String email) {
 
-    public Person(int id, String fullName, int age, String gender, String idCardNumber, String phoneNumber, String email) {
-        this.id = id;
         this.fullName = fullName;
-        this.age = age;
+        this.birthday = birthday;
         this.gender = gender;
         this.idCardNumber = idCardNumber;
         this.phoneNumber = phoneNumber;
         this.email = email;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public String getFullName() {
         return fullName;
@@ -39,12 +30,12 @@ public abstract class Person {
         this.fullName = fullName;
     }
 
-    public int getAge() {
-        return age;
+    public String getBirthday() {
+        return birthday;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setBirthday(String birthday) {
+        this.birthday = birthday;
     }
 
     public String getGender() {
@@ -83,7 +74,7 @@ public abstract class Person {
     public String toString() {
         return "Person{" +
                 "fullName='" + fullName + '\'' +
-                ", birthday='" + age + '\'' +
+                ", birthday='" + birthday + '\'' +
                 ", gender='" + gender + '\'' +
                 ", idCardNumber='" + idCardNumber + '\'' +
                 ", phoneNumber='" + phoneNumber + '\'' +

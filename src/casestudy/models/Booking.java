@@ -1,23 +1,21 @@
 package casestudy.models;
 
-import casestudy.models.person.Customer;
-
-public class Booking implements Comparable<Booking> {
+public class Booking{
     private String idBooking; // Mã booking
     private String startDate; // Ngày bắt đầu
     private String endDate; // Ngày kết thúc
-    private Customer customer; // Mã khách hàng
+    private String idCustomer; // Mã khách hàng
     private String nameService; // Tên dịch vụ
     private String idService; // Mã dịch vụ
 
     public Booking() {
     }
 
-    public Booking(String idBooking, String startDate, String endDate, Customer customer, String nameService, String idService) {
+    public Booking(String idBooking, String startDate, String endDate, String idCustomer, String nameService, String idService) {
         this.idBooking = idBooking;
         this.startDate = startDate;
         this.endDate = endDate;
-        this.customer = customer;
+        this.idCustomer = idCustomer;
         this.nameService = nameService;
         this.idService = idService;
     }
@@ -46,12 +44,12 @@ public class Booking implements Comparable<Booking> {
         this.endDate = endDate;
     }
 
-    public Customer getCustomer() {
-        return customer;
+    public String getIdCustomer() {
+        return idCustomer;
     }
 
-    public void setCustomer(Customer customer) {
-        this.customer = customer;
+    public void setIdCustomer(String idCustomer) {
+        this.idCustomer = idCustomer;
     }
 
     public String getNameService() {
@@ -71,7 +69,14 @@ public class Booking implements Comparable<Booking> {
     }
 
     @Override
-    public int compareTo(Booking o) {
-        return 0;
+    public String toString() {
+        return "Booking{" +
+                "idBooking='" + idBooking + '\'' +
+                ", startDate='" + startDate + '\'' +
+                ", endDate='" + endDate + '\'' +
+                ", customer='" + idCustomer + '\'' +
+                ", nameService='" + nameService + '\'' +
+                ", idService='" + idService + '\'' +
+                '}';
     }
 }

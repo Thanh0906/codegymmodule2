@@ -6,16 +6,11 @@ public class Customer extends Person implements Comparable<Customer>{
     private String customerType; // Loại khách hàng: diamond, platinium, gold, silver, member
     private String addressCustomer; // Địa chỉ của khách hàng
 
-    public Customer(String idCustomer, String customerType, String addressCustomer) {
-        this.idCustomer = idCustomer;
-        this.customerType = customerType;
-        this.addressCustomer = addressCustomer;
-    }
-
-    public Customer(int id, String fullName, int age, String gender, String idCardNumber,
+   public Customer (){}
+    public Customer( String fullName, String birthday, String gender, String idCardNumber,
                     String phoneNumber, String email, String idCustomer, String customerType,
                     String addressCustomer) {
-        super(id, fullName, age, gender, idCardNumber, phoneNumber, email);
+        super(fullName, birthday, gender, idCardNumber, phoneNumber, email);
         this.idCustomer = idCustomer;
         this.customerType = customerType;
         this.addressCustomer = addressCustomer;

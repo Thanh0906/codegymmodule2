@@ -1,7 +1,8 @@
 package casestudy.models.facility;
 
 public abstract  class Facility {
-    private String idFacility;
+    //cơ sở vật chất
+    private String idService; // Mã dịch vụ
     private String nameService;//tên dịch vụ
     private double useArea;//diện tích sử dụng
     private double rentalCosts;//chi phí cho thuê
@@ -11,8 +12,8 @@ public abstract  class Facility {
     public Facility() {
     }
 
-    public Facility(String idFacility, String nameService, double useArea, double rentalCosts, int numberPeople, String styleRental) {
-        this.idFacility = idFacility;
+    public Facility(String idService, String nameService, double useArea, double rentalCosts, int numberPeople, String styleRental) {
+        this.idService = idService;
         this.nameService = nameService;
         this.useArea = useArea;
         this.rentalCosts = rentalCosts;
@@ -20,12 +21,12 @@ public abstract  class Facility {
         this.styleRental = styleRental;
     }
 
-    public String getIdFacility() {
-        return idFacility;
+    public String getIdService() {
+        return idService;
     }
 
-    public void setIdFacility(String idFacility) {
-        this.idFacility = idFacility;
+    public void setIdService(String idService) {
+        this.idService = idService;
     }
 
     public String getNameService() {
@@ -71,7 +72,7 @@ public abstract  class Facility {
     @Override
     public String toString() {
         return "Facility{" +
-                "idFacility='" + idFacility + '\'' +
+                "idService='" + idService + '\'' +
                 ", nameService='" + nameService + '\'' +
                 ", useArea=" + useArea +
                 ", rentalCosts=" + rentalCosts +

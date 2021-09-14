@@ -6,23 +6,18 @@ public class Employee extends Person {
     //nhân viên
     private String level;//trihf độ Trung cấp, Cao đẳng, Đại học và sau đại học
     private String position;//vị trí Lễ tân, phục vụ, chuyên viên, giám sát, quản lý, giám đốc.
-    private int salary;//luong
+    private double salary;//luong
 
     public Employee() {
     }
 
-    public Employee(String level, String position, int salary) {
+    public Employee( String fullName, String birthday, String gender, String idCardNumber, String phoneNumber, String email, String level, String position, double salary) {
+        super(fullName, birthday, gender, idCardNumber, phoneNumber, email);
         this.level = level;
         this.position = position;
         this.salary = salary;
     }
 
-    public Employee(int id, String fullName, int age, String gender, String idCardNumber, String phoneNumber, String email, String level, String position, int salary) {
-        super(id, fullName, age, gender, idCardNumber, phoneNumber, email);
-        this.level = level;
-        this.position = position;
-        this.salary = salary;
-    }
 
     public String getLevel() {
         return level;
@@ -40,17 +35,17 @@ public class Employee extends Person {
         this.position = position;
     }
 
-    public int getSalary() {
+    public double getSalary() {
         return salary;
     }
 
-    public void setSalary(int salary) {
+    public void setSalary(double salary) {
         this.salary = salary;
     }
 
     @Override
     public String toString() {
-        return "Employee{" +
+        return "Employee{" +super.toString()+
                 "level='" + level + '\'' +
                 ", position='" + position + '\'' +
                 ", salary=" + salary +

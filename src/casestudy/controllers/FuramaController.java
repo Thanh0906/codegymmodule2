@@ -1,23 +1,25 @@
 package casestudy.controllers;
 
-import casestudy.sevices.*;
+import casestudy.sevices.impl.*;
 
 import java.util.Scanner;
 
 public class FuramaController {
-        public static void displayMainMenu() {
-            Scanner scanner = new Scanner(System.in);
-            int choice;
-            do {
-                System.out.println("Menu: ");
-                System.out.println("1. Employee Management ");
-                System.out.println("2. Customer Management ");
-                System.out.println("3. Facility Management ");
-                System.out.println("4. Booking Management ");
-                System.out.println("5. Promotion Management ");
-                System.out.println("6. Exit ");
-                System.out.println("Enter your choice: ");
+    public static void displayMainMenu() {
+        Scanner scanner = new Scanner(System.in);
+        int choice = 0;
+        do {
+            System.out.println("Menu: ");
+            System.out.println("1. Employee Management ");
+            System.out.println("2. Customer Management ");
+            System.out.println("3. Facility Management ");
+            System.out.println("4. Booking Management ");
+            System.out.println("5. Promotion Management ");
+            System.out.println("6. Exit ");
+            System.out.println("Enter your choice: ");
+
                 choice = Integer.parseInt(scanner.nextLine());
+
                 switch (choice) {
                     case 1:
                         EmployeeServiceImpl employeeService = new EmployeeServiceImpl();
@@ -136,6 +138,7 @@ public class FuramaController {
                         } while (choiceNumber4 != 6);
                         break;
                     case 5:
+                        PromotionServiceImpl promotionService= new PromotionServiceImpl();
                         int choiceNumber5;
                         do {
                             System.out.println("1. Display list customers use service ");
@@ -145,8 +148,10 @@ public class FuramaController {
                             choiceNumber5 = Integer.parseInt(scanner.nextLine());
                             switch (choiceNumber5) {
                                 case 1:
+                                    promotionService.displayList();
                                     break;
                                 case 2:
+                                    promotionService.displayPromotion();
                                     break;
                                 case 3:
                                     break;
@@ -158,10 +163,13 @@ public class FuramaController {
                     case 6:
                         System.exit(6);
                 }
-            } while (choice != 6);
-        }
 
-        public static void main(String[] args) {
-            displayMainMenu();
-        }
+        } while (choice != 6);
+
+    }
+
+    public static void main(String[] args) {
+        displayMainMenu();
+    }
+
 }
